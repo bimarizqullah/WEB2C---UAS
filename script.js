@@ -5,29 +5,30 @@ function halamanRegistrasi() {
   window.location.href = "register.php";
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const image = document.getElementById("mlbb");
+document.addEventListener('DOMContentLoaded', function() {
+  const image = document.getElementById('mlbb');
 
-  image.addEventListener("click", function () {
-    window.location.href = "mlbb.php";
+  image.addEventListener('click', function() {
+      window.location.href = 'mlbb.php';  
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const image = document.getElementById("ff");
+document.addEventListener('DOMContentLoaded', function() {
+  const image = document.getElementById('ff');
 
-  image.addEventListener("click", function () {
-    window.location.href = "ff.php";
+  image.addEventListener('click', function() {
+      window.location.href = 'ff.php';  
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const image = document.getElementById("pubg");
+document.addEventListener('DOMContentLoaded', function() {
+  const image = document.getElementById('pubg');
 
-  image.addEventListener("click", function () {
-    window.location.href = "pubg.php";
+  image.addEventListener('click', function() {
+      window.location.href = 'pubg.php';  
   });
 });
+
 
 function login() {
   const email = document.getElementById("email").value;
@@ -43,20 +44,21 @@ function login() {
   }
 }
 function logout() {
-  alert("You have been logged out.");
-  window.location.href = "index.php";
+
+  alert('You have been logged out.');
+  window.location.href = 'index.php'; 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const username = localStorage.getItem("username") || "banuri";
-  const email = localStorage.getItem("email");
-  const sessionStart =
-    localStorage.getItem("sessionStart") || "2024-05-29 10:00:00";
 
-  document.getElementById("user-name").textContent = `Welcome, ${username}`;
-  document.getElementById("session-username").textContent = username;
-  document.getElementById("session-email").textContent = email;
-  document.getElementById("session-start").textContent = sessionStart;
+document.addEventListener('DOMContentLoaded', () => {
+  const username = localStorage.getItem('username') || 'banuri';
+  const email = localStorage.getItem('email');
+  const sessionStart = localStorage.getItem('sessionStart') || '2024-05-29 10:00:00';
+
+  document.getElementById('user-name').textContent = `Welcome, ${username}`;
+  document.getElementById('session-username').textContent = username;
+  document.getElementById('session-email').textContent = email;
+  document.getElementById('session-start').textContent = sessionStart;
 });
 
 let slideIndex = 0;
@@ -82,15 +84,4 @@ function showSlides() {
 
 function currentSlide(n) {
   showSlides((slideIndex = n));
-}
-
-/* Toggle sidebar */
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
 }
