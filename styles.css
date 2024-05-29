@@ -7,26 +7,6 @@ body {
   padding: 0;
 }
 
-<<<<<<< HEAD
-=======
-.session-info {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 500px;
-  text-align: left;
-}
-
-.session-info p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-
-
->>>>>>> ff0273927af086ab060574311803907883c79a20
 .search-container {
   display: flex;
   align-items: center;
@@ -86,19 +66,6 @@ h2 {
   cursor: pointer;
 }
 
-
-
-.logout-btn {
-  width: 100px;
-  background-color: #6a00a0;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .recommendation-list {
   display: flex;
   flex-wrap: wrap;
@@ -107,8 +74,8 @@ h2 {
 }
 
 .recommendation-item {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-color: #4c006e;
   padding: 20px;
   margin: 20px;
@@ -279,6 +246,113 @@ h2 {
   }
 }
 
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #6a0dad; /* Dark purple */
+  padding: 10px;
+}
+
+.navbar img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.search-container {
+  display: flex;
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.login-btn {
+  padding: 10px;
+  background-color: #8a2be2; /* Medium purple */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: #7a1db0; /* Darker medium purple */
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2f1541; /* Dark purple */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #dcdcdc; /* Light gray */
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffffff; /* White */
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #6a0dad; /* Dark purple */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.openbtn:hover {
+  background-color: #7a1db0; /* Darker medium purple */
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+a {
+  color: #6a0dad; /* Dark purple for links */
+}
+
+a:hover {
+  color: #7a1db0; /* Darker medium purple for hovered links */
+}
+
 /* Footer styles */
 .footer {
   background-color: #4c006e;
@@ -407,4 +481,68 @@ h2 {
   .footer-contact h3 {
     font-size: 18px;
   }
+}
+
+/* keungulan */
+h1 {
+  font-size: 32px; /* Perbesar ukuran judul */
+}
+
+p {
+  font-size: 16px; /* Ukuran teks yang lebih nyaman dibaca */
+}
+
+main {
+  padding: 40px; /* Perbesar padding untuk konten utama */
+}
+
+.keunggulan {
+  margin-bottom: 40px; /* Perbesar jarak antar bagian */
+}
+
+.keunggulan h2 {
+  font-size: 24px; /* Perbesar ukuran judul bagian */
+  margin-bottom: 20px;
+}
+
+.keunggulan ul {
+  list-style: disc; /* Ubah gaya daftar menjadi bullet */
+  padding: 20px;
+}
+
+.keunggulan li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd; /* Tambahkan garis bawah pada setiap item */
+  padding-bottom: 10px;
+}
+
+.keunggulan h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* testimoni */
+.testimoni {
+  margin-bottom: 40px;
+}
+
+.testimoni h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimoni-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.testimoni-isi {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.testimoni-nama {
+  font-style: italic;
+  font-size: 14px;
 }
