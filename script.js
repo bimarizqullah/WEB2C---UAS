@@ -1,6 +1,9 @@
 function halamanLogin() {
   window.location.href = "login.php";
 }
+function halamanRegistrasi() {
+  window.location.href = "register.php";
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   const image = document.getElementById('mlbb');
@@ -34,11 +37,29 @@ function login() {
 
   if ((email == "admin@gmail.com") & (password == "admin")) {
     alert("Login Berhasil!");
-    window.location.href = "index.php";
+    window.location.href = "indexSession.php";
   } else {
     alert("Login Gagal!");
+    location.reload();
   }
 }
+function logout() {
+
+  alert('You have been logged out.');
+  window.location.href = 'index.php'; 
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const username = localStorage.getItem('username') || 'banuri';
+  const email = localStorage.getItem('email');
+  const sessionStart = localStorage.getItem('sessionStart') || '2024-05-29 10:00:00';
+
+  document.getElementById('user-name').textContent = `Welcome, ${username}`;
+  document.getElementById('session-username').textContent = username;
+  document.getElementById('session-email').textContent = email;
+  document.getElementById('session-start').textContent = sessionStart;
+});
 
 let slideIndex = 0;
 showSlides();

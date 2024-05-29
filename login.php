@@ -31,8 +31,8 @@
 
           <div class="separator">OR</div>
 
-          <button type="button" class="email-button">
-            Masuk Melalui Email
+          <button type="button" class="email-button" onclick="halamanRegistrasi()">
+            Registrasi 
           </button>
         </form>
       </div>

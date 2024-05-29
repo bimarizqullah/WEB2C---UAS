@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HANZ STORE | Top Up Termurah Sejagat</title>
+    <title>HANZ STORE | User Session</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,9 +16,14 @@
                     <img src="logo/icon.png" alt="Search">
                 </button>
             </div>
-            <button type="button" class="login-btn" onclick="halamanLogin()">Daftar</button>
+            <div class="user-info">
+                <span id="user-name">Welcome, User</span>
+                <button type="button" class="logout-btn" onclick="logout()">Logout</button>
+            </div>
         </div>
-        <h2>Promo Mingguan</h2>
+    </header>
+    <main>
+    <h2>Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
                 <img class="promo-img" src="gambar/mlbbSlide.jpg" alt="Promo 1">
@@ -55,40 +60,47 @@
             </div>
         </div>
     </div>
+        <h2>Your Session</h2>
+        <div class="session-info">
+            <p>Username: <span id="session-username">User123</span></p>
+            <p>Email: <span id="session-email">user@example.com</span></p>
+            <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
+        </div>
+    </main> 
     <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="gambar/logo.jpg" alt="HANZ STORE">
-            <p>HANZ STORE - Top Up Termurah Sejagat</p>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="gambar/logo.jpg" alt="HANZ STORE">
+                <p>HANZ STORE - Top Up Termurah Sejagat</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Game List</a></li>
+                    <li><a href="#">Keunggulan</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li><a href="#"><img src="logo/fb.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="logo/ig.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="logo/yt.png" alt="YouTube"></a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Email: support@hanzstore.com</p>
+                <p>Telepon: +62 812 3456 789</p>
+            </div>
         </div>
-        <div class="footer-links">
-            <h3>Navigasi</h3>
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Promo</a></li>
-                <li><a href="#">Game List</a></li>
-                <li><a href="#">Keunggulan</a></li>
-                <li><a href="#">Kontak Kami</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HANZ STORE. All rights reserved.</p>
         </div>
-        <div class="footer-social">
-            <h3>Ikuti Kami</h3>
-            <ul>
-                <li><a href="#"><img src="logo/fb.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="logo/ig.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="logo/yt.png" alt="YouTube"></a></li>
-            </ul>
-        </div>
-        <div class="footer-contact">
-            <h3>Hubungi Kami</h3>
-            <p>Email: support@hanzstore.com</p>
-            <p>Telepon: +62 812 3456 789</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 HANZ STORE. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>
