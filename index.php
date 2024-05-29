@@ -115,7 +115,7 @@
         <div class="footer-contact">
             <h3>Hubungi Kami</h3>
             <p>Email: support@hanzstore.com</p>
-            <p>Telepon: +62 123 456 789</p>
+            <p>Telepon: +62 812 3456 789</p>
         </div>
     </div>
     <div class="footer-bottom">
