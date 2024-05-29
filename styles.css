@@ -7,7 +7,6 @@ body {
   padding: 0;
 }
 
-
 .search-container {
   display: flex;
   align-items: center;
@@ -70,7 +69,7 @@ h2 {
 .recommendation-list {
   display: flex;
   flex-wrap: wrap;
-  
+
   padding: 20px;
 }
 
@@ -183,67 +182,67 @@ h2 {
 /* Responsive design */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
 
   .search-container {
-      margin-top: 10px;
-      width: 100%;
+    margin-top: 10px;
+    width: 100%;
   }
 
   .search-input {
-      width: 100%;
+    width: 100%;
   }
 
   .recommendation-item {
-      width: 45%;
+    width: 45%;
   }
 
   .advantage-item {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .advantage-item img {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-      padding: 5px;
+    padding: 5px;
   }
 
   .search-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .search-input {
-      width: 100%;
-      margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .login-btn {
-      width: 100%;
-      margin-top: 10px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .recommendation-item {
-      width: 100%;
+    width: 100%;
   }
 
   .advantage-item {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .advantage-item img {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -276,31 +275,39 @@ h2 {
   color: #d881ee;
 }
 
-.footer-links, .footer-social, .footer-contact {
+.footer-links,
+.footer-social,
+.footer-contact {
   margin: 20px 0;
 }
 
-.footer-links h3, .footer-social h3, .footer-contact h3 {
+.footer-links h3,
+.footer-social h3,
+.footer-contact h3 {
   font-size: 20px;
   color: #d881ee;
   margin-bottom: 10px;
 }
 
-.footer-links ul, .footer-social ul {
+.footer-links ul,
+.footer-social ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-links ul li, .footer-social ul li {
+.footer-links ul li,
+.footer-social ul li {
   margin: 10px 0;
 }
 
-.footer-links ul li a, .footer-social ul li a {
+.footer-links ul li a,
+.footer-social ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-links ul li a:hover, .footer-social ul li a:hover {
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
   text-decoration: underline;
 }
 
@@ -327,38 +334,44 @@ h2 {
 /* Responsive footer design */
 @media (max-width: 768px) {
   .footer-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer-logo, .footer-links, .footer-social img, .footer-contact {
-      border-radius: 10px;
-      text-align: center;
-      margin: 10px 0;
+  .footer-logo,
+  .footer-links,
+  .footer-social img,
+  .footer-contact {
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0;
   }
 
-  .footer-links ul, .footer-social ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+  .footer-links ul,
+  .footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .footer-links ul li, .footer-social ul li {
-      margin: 5px 10px;
+  .footer-links ul li,
+  .footer-social ul li {
+    margin: 5px 10px;
   }
 }
 
 @media (max-width: 480px) {
   .footer-logo img {
-      height: 40px;
+    height: 40px;
   }
 
   .footer-logo p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
-  .footer-links h3, .footer-social h3, .footer-contact h3 {
-      font-size: 18px;
+  .footer-links h3,
+  .footer-social h3,
+  .footer-contact h3 {
+    font-size: 18px;
   }
 }
-

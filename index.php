@@ -55,6 +55,39 @@
             </div>
         </div>
     </div>
+
+    <main>
+    <section class="keunggulan">
+      <h2>Keuntungan Top Up Game di HANZ STORE</h2>
+      <ul>
+        <li>
+          <h3>Mudah, Cepat, dan Aman</h3>
+          <p>Proses top up game di HANZ STORE sangat mudah dan cepat. Anda hanya perlu memilih game yang ingin di-top up, memasukkan ID game, dan memilih metode pembayaran. HANZ STORE menggunakan sistem keamanan yang canggih untuk memastikan keamanan transaksi Anda.</p>
+        </li>
+        <li>
+          <h3>Tersedia Berbagai Pilihan Game dan Metode Pembayaran</h3>
+          <p>HANZ STORE menyediakan top up game untuk berbagai jenis game, seperti Mobile Legends, Free Fire, PUBG Mobile, Ragnarok M, dan masih banyak lagi. HANZ STORE juga menyediakan berbagai pilihan metode pembayaran, seperti transfer bank, e-wallet, dan minimarket.</p>
+        </li>
+        <li>
+          <h3>Harga Termurah dan Promo Menarik</h3>
+          <p>HANZ STORE menawarkan harga top up game yang termurah di Indonesia. HANZ STORE juga sering mengadakan promo menarik, seperti diskon dan cashback.</p>
+        </li>
+        <li>
+          <h3>Layanan Pelanggan yang Ramah dan Cepat</h3>
+          <p>Tim customer service HANZ STORE selalu siap membantu Anda jika Anda mengalami kesulitan saat melakukan top up game. Anda dapat menghubungi customer service HANZ STORE melalui live chat, email, atau telepon.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="call-to-action">
+      <h2>Yuk, top up game di HANZ STORE sekarang!</h2>
+      <p>Dapatkan pengalaman top up game yang mudah, cepat, aman, dan murah! Jangan lupa ikuti promo menarik dari HANZ STORE!</p>
+      <a href="#">Top Up Sekarang</a>
+    </section>
+  </main>
+
+
+
     <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
