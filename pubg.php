@@ -112,6 +112,23 @@
                 <!-- Add more items as needed -->
             </div>
         </div>
+        <div class="checkout-section">
+            <img src="logo/no3.png" alt="nomor">
+            <h2>Pilih Metode Pembayaran</h2>
+            <div class="checkout-option" onclick="selectCheckout()">
+                <img src="logo/shopee.png" alt="shopeeLogo">
+                <h3>Shopee</h3>
+            </div>
+            <div class="checkout-option" onclick="selectCheckout()">
+                <img src="logo/gopay.png" alt="gopayLogo">
+                <h3>Gopay</h3>
+            </div>
+            <div class="checkout-option" onclick="selectCheckout()">
+                <img src="logo/dana.png" alt="danaLogo">
+                <h3>Dana</h3>
+            </div>
+                
+        </div>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     
@@ -167,11 +184,11 @@
             <div class="footer-links">
                 <h3>Navigasi</h3>
                 <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Game List</a></li>
-                    <li><a href="#">Keunggulan</a></li>
-                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="index.php">Beranda</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#game-list">Game List</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
                 </ul>
             </div>
             <div class="footer-social">

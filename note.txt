@@ -1,51 +1,12 @@
-<main>
-            <section id="keunggulan" class="keunggulan">
-                <h2>Keunggulan Top Up Game di HANZ STORE</h2>
-                <ul>
-                    <li>
-                        <h3>Mudah, Cepat, dan Aman</h3>
-                        <p>Proses top up game di HANZ STORE sangat mudah dan cepat. Anda hanya perlu memilih game yang ingin di-top up, memasukkan ID game, dan memilih metode pembayaran. HANZ STORE menggunakan sistem keamanan yang canggih untuk memastikan keamanan transaksi Anda.</p>
-                    </li>
-                    <li>
-                        <h3>Tersedia Berbagai Pilihan Game dan Metode Pembayaran</h3>
-                        <p>HANZ STORE menyediakan top up game untuk berbagai jenis game, seperti Mobile Legends, Free Fire, PUBG Mobile, Ragnarok M, dan masih banyak lagi. HANZ STORE juga menyediakan berbagai pilihan metode pembayaran, seperti transfer bank, e-wallet, dan minimarket.</p>
-                    </li>
-                    <li>
-                        <h3>Harga Termurah dan Promo Menarik</h3>
-                        <p>HANZ STORE menawarkan harga top up game yang termurah di Indonesia. HANZ STORE juga sering mengadakan promo menarik, seperti diskon dan cashback.</p>
-                    </li>
-                    <li>
-                        <h3>Layanan Pelanggan yang Ramah dan Cepat</h3>
-                        <p>Tim customer service HANZ STORE selalu siap membantu Anda jika Anda mengalami kesulitan saat melakukan top up game. Anda dapat menghubungi customer service HANZ STORE melalui live chat, email, atau telepon.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="testimoni">
-                <h2>Testimoni Pelanggan</h2>
-                <div class="testimoni-item">
-                    <p class="testimoni-isi">"Top up game di HANZ STORE itu mudah banget! Cuma beberapa klik, game saya sudah di-top up. Harganya juga murah dan banyak promonya. Pokoknya recommended banget!"</p>
-                    <p class="testimoni-nama">- Budi, Jakarta</p>
-                </div>
-                <div class="testimoni-item">
-                    <p class="testimoni-isi">"Saya selalu top up game di HANZ STORE karena prosesnya cepat dan aman. Customer servicenya juga ramah dan membantu. Terima kasih HANZ STORE!"</p>
-                    <p class="testimoni-nama">- Ani, Surabaya</p>
-                </div>
-                <div class="testimoni-item">
-                    <p class="testimoni-isi">"HANZ STORE itu tempat terbaik untuk top up game. Harganya murah, promonya banyak, dan pelayanannya memuaskan. Saya puas banget!"</p>
-                    <p class="testimoni-nama">- Caca, Bandung</p>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <div class="footer-links">
-                <h3>Navigasi</h3>
-                <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Game List</a></li>
-                    <li><a href="#">Keunggulan</a></li>
-                    <li><a href="#">Testimoni</a></li>
-                </ul>
+<div class="user-info">
+                <span id="user-name">Welcome, User</span>
+                <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
+
+            </div>
+        <h2>Your Session</h2>
+            <div class="session-info">
+                <p>Halo, <span id="session-username">User123</span></p>
+                <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
+            </div>
+    </div>

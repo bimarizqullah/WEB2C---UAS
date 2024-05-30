@@ -1,7 +1,3 @@
-<?php
-    include 'config.php'
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HANZ STORE | Free Fire</title>
     <link rel="stylesheet" href="styles.css">
-</head> 
+</head>
 <body>
     <header>
-        <div class="navbar">
+    <div class="navbar">
             <button class="openbtn" onclick="openNav()">☰</button>
             <img id="logoSession" src="gambar/logo.jpg" alt="HANZ STORE" style="cursor:pointer">
             <div class="search-container">
@@ -25,6 +21,7 @@
                 <span id="user-name">Welcome, User</span>
                 <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
+
         </div>
         <h2 style="text-align:center">Promo Mingguan</h2>
         <div class="slideshow-container">
@@ -33,9 +30,11 @@
             </div>
         </div>
         <br>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
     </header>
-    
-    <!-- Sidebar structure -->
+    <!-- side bar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Beranda</a>
@@ -56,10 +55,9 @@
         </div>
         <div class="top-up-section">
             <img src="logo/no2.png" alt="nomor" >  
-            <h2 style="text-align:center">Pilih Nominal Top Up</h2>
+            <h2>Pilih Nominal Top Up</h2>
             <div class="item-info">
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
-            </div>
             </div>
             <div class="items">
                 <div class="item" onclick="selectItem(3, 1171)">
@@ -121,6 +119,22 @@
                 <!-- Add more items as needed -->
             </div>
         </div>
+        <div class="checkout-section">
+            <img src="logo/no3.png" alt="nomor">
+            <h2>Pilih Metode Pembayaran</h2>
+            <div class="checkout-option" onclick="selectCheckout()">
+                <img src="logo/shopee.png" alt="shopeeLogo">
+                <h3>Shopee</h3>
+            </div>
+            <div class="checkout-option" onclick="selectCheckout()">
+                <img src="logo/gopay.png" alt="gopayLogo">
+                <h3>Gopay</h3>
+            </div>
+            <div class="checkout-option" onclick="selectCheckout()">
+                <img src="logo/dana.png" alt="danaLogo">
+                <h3>Dana</h3>
+            </div>
+        </div>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     
@@ -166,6 +180,8 @@
         </main>
     </di>
     </div>
+    </div>
+    </div>
         <h2>Your Session</h2>
             <div class="session-info">
                 <p>Halo, <span id="session-username">User123</span></p>
@@ -181,11 +197,11 @@
             <div class="footer-links">
                 <h3>Navigasi</h3>
                 <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Game List</a></li>
-                    <li><a href="#">Keunggulan</a></li>
-                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="index.php">Beranda</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#game-list">Game List</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
                 </ul>
             </div>
             <div class="footer-social">
