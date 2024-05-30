@@ -714,7 +714,6 @@ a:hover {
 }
 
 .popup p {
-
   padding-left: 20px;
   color: black;
   margin: 0 0 20px 0;
@@ -738,7 +737,3 @@ a:hover {
   z-index: 999;
   display: none;
 }
-
-
-
-
