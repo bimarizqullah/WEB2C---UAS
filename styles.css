@@ -13,7 +13,6 @@ body {
   margin: 20px;
   padding: 20px;
   max-width: 500px;
-
 }
 
 .session-info p {
@@ -595,7 +594,7 @@ a:hover {
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .user-id-section, .top-up-section {
@@ -622,7 +621,8 @@ a:hover {
   margin-bottom: 10px;
 }
 
-#user-id, #zone-id {
+#user-id,
+#zone-id {
   color: black;
   padding: 10px;
   margin-right: 10px;
@@ -644,7 +644,8 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.category button, .item {
+.category button,
+.item {
   margin: 5px;
   padding: 10px;
   border: 1px solid #ddd;
