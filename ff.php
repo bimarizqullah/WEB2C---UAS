@@ -21,27 +21,30 @@
             </div>
             <button type="button" class="login-btn" onclick="halamanLogin()">Daftar</button>
         </div>
-        <h2 id="promo" style="text-align:center">Promo Mingguan</h2>
+        <h2 style="text-align:center">Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
                 <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
             </div>
+        </div>
         <br>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
     </header>
-    
-    <!-- Sidebar structure -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.php">Beranda</a>
-        <a href="#promo">Promo</a>
-        <a href="index.php #game-list">Game List</a>
-        <a href="#keunggulan">Keunggulan</a>
-        <a href="#testimoni">Testimoni</a>
+        <a href="#">Beranda</a>
+        <a href="#">Promo</a>
+        <a href="#">Game List</a>
+        <a href="#">Keunggulan</a>
+        <a href="#">Testimoni</a>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     <div class="container">
         <div class="user-id-section">
-            <img src="logo/no1.png">            
+            <img src="logo/no1.png" alt="nomor" >   
             <h2>Masukkan User ID</h2>
                 <input type="text" id="user-id" placeholder="User ID">
                 <input type="text" id="zone-id" placeholder="Zone ID">
@@ -49,7 +52,7 @@
             <p id="user-status">Selamat Datang <span id="username">SUPER JEYYY.</span></p>
         </div>
         <div class="top-up-section">
-        <img src="logo/no2.png" alt="nomor" >
+            <img src="logo/no2.png" alt="nomor" >  
             <h2>Pilih Nominal Top Up</h2>
             <div class="item-info">
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
@@ -84,8 +87,8 @@
                     <p>Rp. 1.171</p>
                 </div>
                 <div class="item" onclick="selectItem(5, 1423)">
-                    <h3 id="jumlah">5 Diamonds</h3>
-                    <p id="harga">Rp. 1.423</p>
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
                 </div>
                 <div class="item" onclick="selectItem(3, 1171)">
                     <h3>3 Diamonds</h3>
@@ -150,12 +153,11 @@
             </div> 
         </div>
     </div>
-  
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     
 
         <main>
-            <section id="keunggulan" class="keunggulan">
+            <section class="keunggulan">
                 <h2>Keunggulan Top Up Game di HANZ STORE</h2>
                 <ul>
                     <li>
@@ -177,7 +179,7 @@
                 </ul>
             </section>
 
-            <section id="testimoni" class="testimoni">
+            <section class="testimoni">
                 <h2>Testimoni Pelanggan</h2>
                 <div class="testimoni-item">
                     <p class="testimoni-isi">"Top up game di HANZ STORE itu mudah banget! Cuma beberapa klik, game saya sudah di-top up. Harganya juga murah dan banyak promonya. Pokoknya recommended banget!"</p>
@@ -234,4 +236,4 @@
     <script src="script.js"></script>
 </body>
 </html>
-
+    
