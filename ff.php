@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
     <title>HANZ STORE | Mobile Legends: Bang Bang</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<>
     <header>
     <div class="navbar">
             <button class="openbtn" onclick="openNav()">☰</button>
@@ -25,7 +27,7 @@
                 <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
             </div>
         <br>
-    </header>
+    </header>x
     
     <!-- Sidebar structure -->
     <div id="mySidebar" class="sidebar">
@@ -39,7 +41,7 @@
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     <div class="container">
         <div class="user-id-section">
-            <img src="logo/no1.png" alt="nomor" >   
+            <img src="logo/no1.png">            
             <h2>Masukkan User ID</h2>
                 <input type="text" id="user-id" placeholder="User ID">
                 <input type="text" id="zone-id" placeholder="Zone ID">
@@ -47,7 +49,7 @@
             <p id="user-status">Selamat Datang <span id="username">SUPER JEYYY.</span></p>
         </div>
         <div class="top-up-section">
-            <img src="logo/no2.png" alt="nomor" >  
+        <img src="logo/no2.png" alt="nomor" >
             <h2>Pilih Nominal Top Up</h2>
             <div class="item-info">
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
@@ -82,8 +84,8 @@
                     <p>Rp. 1.171</p>
                 </div>
                 <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
+                    <h3 id="jumlah">5 Diamonds</h3>
+                    <p id="harga">Rp. 1.423</p>
                 </div>
                 <div class="item" onclick="selectItem(3, 1171)">
                     <h3>3 Diamonds</h3>
@@ -111,7 +113,14 @@
                 </div>
                 <!-- Add more items as needed -->
             </div>
+            <div class="checkout">
+                <img src="logo/no2.png">
+                <h2>Pilih Metode Pembayaran</h2>
+            </div>
         </div>
+    </div>
+    <div class="checkout">
+        <h2
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     
@@ -196,3 +205,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

@@ -598,11 +598,14 @@ a:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.user-id-section {
+.user-id-section, .top-up-section {
+  position: relative;
+  padding-left: 50px;
   margin-bottom: 20px;
 }
 
-.user-id-section img {
+.user-id-section img, .top-up-section img {
+  position: absolute;
   width: 30px;
   height: 30px;
 }
@@ -612,7 +615,8 @@ a:hover {
   color: green;
 }
 
-.user-id-section h2 {
+.user-id-section h2, .top-up-section h2 {
+  padding-left: 50px;
   color: black;
   margin-top: 20px;
   margin-bottom: 10px;
