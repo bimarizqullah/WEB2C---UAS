@@ -61,20 +61,20 @@
             <h2>List Game</h2>
             <div class="recommendation-list" style="cursor:pointer;">
                 <div class="recommendation-item">
-                    <img id="mlbb" src="gambar/1.jpg" alt="Mobile Legends">
+                    <img id="mlbbSession" src="gambar/1.jpg" alt="Mobile Legends">
                 </div>
                 <div class="recommendation-item">
-                    <img id="ff" src="gambar/2.jpg" alt="Free Fire">
+                    <img id="ffSession" src="gambar/2.jpg" alt="Free Fire">
                 </div>
                 <div class="recommendation-item">
-                    <img id="pubg" src="gambar/3.jpg" alt="PUBG">
+                    <img id="pubgSession" src="gambar/3.jpg" alt="PUBG">
                 </div>
             </div>
         </div>
 
         <main>
             <section class="keunggulan">
-                <h2>Keuntungan Top Up Game di HANZ STORE</h2>
+                <h2>Keunggulan Top Up Game di HANZ STORE</h2>
                 <ul>
                     <li>
                         <h3>Mudah, Cepat, dan Aman</h3>
@@ -115,8 +115,7 @@
     </div>
         <h2>Your Session</h2>
             <div class="session-info">
-                <p>Username: <span id="session-username">User123</span></p>
-                <p>Email: <span id="session-email">user@example.com</span></p>
+                <p>Halo, <span id="session-username">User123</span></p>
                 <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
             </div>
     </div>

@@ -5,6 +5,26 @@ function halamanRegistrasi() {
   window.location.href = "register.php";
 }
 
+/*logo HANZ action*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const image = document.getElementById("logo");
+
+  image.addEventListener("click", function () {
+    window.location.href = "index.php";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const image = document.getElementById("logoSession");
+
+  image.addEventListener("click", function () {
+    window.location.href = "indexSession.php";
+  });
+});
+
+
+/*mlbb action */
 document.addEventListener("DOMContentLoaded", function () {
   const image = document.getElementById("mlbb");
 
@@ -14,6 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const image = document.getElementById("mlbbSession");
+
+  image.addEventListener("click", function () {
+    window.location.href = "mlbbSession.php";
+  });
+});
+
+/*ff action */
+document.addEventListener("DOMContentLoaded", function () {
   const image = document.getElementById("ff");
 
   image.addEventListener("click", function () {
@@ -22,10 +51,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const image = document.getElementById("ffSession");
+
+  image.addEventListener("click", function () {
+    window.location.href = "ffSession.php";
+  });
+});
+
+/* pubg session */
+
+document.addEventListener("DOMContentLoaded", function () {
   const image = document.getElementById("pubg");
 
   image.addEventListener("click", function () {
     window.location.href = "pubg.php";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const image = document.getElementById("pubgSession");
+
+  image.addEventListener("click", function () {
+    window.location.href = "pubgSession.php";
   });
 });
 
@@ -49,7 +96,7 @@ function logout() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const username = localStorage.getItem("username") || "banuri";
-  const email = localStorage.getItem("email");
+  const email = localStorage.getItem("email") || "admin@gmail.com";
   const sessionStart =
     localStorage.getItem("sessionStart") || "2024-05-29 10:00:00";
 

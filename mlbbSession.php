@@ -6,18 +6,110 @@
     <title>HANZ STORE | Top Up Termurah Sejagat</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.user-id-section {
+    margin-bottom: 20px;
+}
+
+.user-id-section img {
+    width: 30px;
+    height: 30px;
+}
+
+#user-status {
+    margin-top: 10px;
+    color: green;
+}
+
+.user-id-section h2 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#user-id, #zone-id {
+    color: black;
+    padding: 10px;
+    margin-right: 10px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.top-up-section {
+    margin-bottom: 20px;
+}
+
+.top-up-section img {
+    width: 30px;
+}
+
+.top-up-section h2 {
+    color: black;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.category button, .item {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category button {
+    background-color: #f4f4f4;
+}
+
+.item {
+    background-color: white;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+.item:hover {
+    background-color: grey;
+}
+
+.item h3 {
+    color: black;
+    margin: 10px 0;
+}
+
+.item-info {
+    color: black;
+}
+
+.item p {
+    color: black;
+    margin: 5px 0;
+}
+
+</style>
 <body>
     <header>
         <div class="navbar">
             <button class="openbtn" onclick="openNav()">☰</button>
-            <img src="gambar/logo.jpg" alt="HANZ STORE" style="cursor:pointer">
+            <img id="logoSession" src="gambar/logo.jpg" alt="HANZ STORE" style="cursor:pointer">
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Cari di HanzStore">
                 <button class="search-btn">
                     <img src="logo/icon.png" alt="Search">
                 </button>
             </div>
-            <button type="button" class="login-btn" onclick="halamanLogin()">Daftar</button>
+            <div class="user-info">
+                <span id="user-name">Welcome, User</span>
+                <button type="button" class="logout-btn" onclick="logout()">Logout</button>
+            </div>
         </div>
         <h2>Promo Mingguan</h2>
         <div class="slideshow-container">
@@ -27,19 +119,11 @@
             <div class="slides fade">
                 <img class="promo-img" src="gambar/mlbbSlideKof.jpg" alt="Promo 2">
             </div>
-            <div class="slides fade">
-                <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 3">
-            </div>
-            <div class="slides fade">
-                <img class="promo-img" src="gambar/pubgSlide.jpg" alt="Promo 4">
-            </div>
         </div>
         <br>
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </header>
     
@@ -52,22 +136,88 @@
         <a href="#">Keunggulan</a>
         <a href="#">Testimoni</a>
     </div>
-
-    <div id="main">
-        <div class="game-list">
-            <h2>List Game</h2>
-            <div class="recommendation-list" style="cursor:pointer;">
-                <div class="recommendation-item">
-                    <img id="mlbb" src="gambar/1.jpg" alt="Mobile Legends">
+    <div class="container">
+        <div class="user-id-section">
+            <img src="logo/no1.png" alt="nomor" >   
+            <h2>Masukkan User ID</h2>
+                <input type="text" id="user-id" placeholder="User ID">
+                <input type="text" id="zone-id" placeholder="Zone ID">
+            <button onclick="checkUserId()">?</button>
+            <p id="user-status">Selamat Datang <span id="username">SUPER JEYYY.</span></p>
+        </div>
+        <div class="top-up-section">
+            <img src="logo/no2.png" alt="nomor" >  
+            <h2>Pilih Nominal Top Up</h2>
+            <div class="item-info">
+                <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
+            </div>
+            <div class="category">
+                <button>Diamond</button>
+                <button>Weekly Diamond Pass</button>
+                <button>Twilight Pass</button>
+            </div>
+            <div class="items">
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
                 </div>
-                <div class="recommendation-item">
-                    <img id="ff" src="gambar/2.jpg" alt="Free Fire">
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
                 </div>
-                <div class="recommendation-item">
-                    <img id="pubg" src="gambar/3.jpg" alt="PUBG">
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
                 </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <!-- Add more items as needed -->
             </div>
         </div>
+    </div>
+    
 
         <main>
             <section class="keunggulan">
@@ -108,8 +258,14 @@
                 </div>
             </section>
         </main>
+    </di>
     </div>
-
+        <h2>Your Session</h2>
+            <div class="session-info">
+                <p>Halo, <span id="session-username">User123</span></p>
+                <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
+            </div>
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
