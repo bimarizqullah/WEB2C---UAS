@@ -588,7 +588,7 @@ a:hover {
 
 /*mlbb.php,mlbbSession.php | ff.php,ffSession.php | pubg.php,pubgSession.php*/
 .container {
-  margin-top: 0px;
+  margin-top: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -597,16 +597,24 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.user-id-section, .top-up-section {
+.user-id-section, .top-up-section, .checkout-section {
+  margin-bottom: 50px;
   position: relative;
   padding-left: 50px;
   margin-bottom: 20px;
 }
 
-.user-id-section img, .top-up-section img {
+.user-id-section img, .top-up-section img, .checkout-section img {
   position: absolute;
   width: 30px;
   height: 30px;
+}
+
+.user-id-section h2, .top-up-section h2, .checkout-section h2 {
+  padding-left: 50px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 #user-status {
@@ -614,43 +622,32 @@ a:hover {
   color: green;
 }
 
-.user-id-section h2, .top-up-section h2 {
-  padding-left: 50px;
-  color: black;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
 #user-id,
 #zone-id {
   color: black;
   padding: 10px;
   margin-right: 10px;
-  border: 3px solid black;
+  border: 3px solid #ddd;
   border-radius: 4px;
-}
-.top-up-section {
-  margin-bottom: 20px;
-}
-
-.top-up-section img {
-  width: 30px;
-}
-
-.top-up-section h2 {
-  color: black;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+} 
 
 .category button,
-.item {
+.item, .checkout-option {
   margin: 5px;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 3px solid #ddd;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.checkout-option {
+  height: 50px;
+}
+
+.checkout-option img {
+  margin: 5px 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .category button {
@@ -663,11 +660,12 @@ a:hover {
   width: 200px;
   text-align: center;
 }
-.item:hover {
+.item:hover, .checkout-option:hover {
   background-color: grey;
 }
 
-.item h3 {
+.item h3, .checkout-option h3 {
+  padding: 5px 70px ;
   color: black;
   margin: 10px 0;
 }

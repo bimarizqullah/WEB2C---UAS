@@ -60,6 +60,7 @@ label {
 }
 
 input[type="text"],
+input[type="username"],
 input[type="email"],
 input[type="password"] {
   padding: 10px;

@@ -15,7 +15,10 @@
       </div>
       <div class="login-right">
         <form>
-          <label for="email">Masukkan Email</label>
+          <label for="username">Masukkan Username</label>
+          <input type="Username" id="username" name="username" required/>
+
+          <label for="email" >Masukkan Email</label>
           <input type="email" id="email" name="email"/>
 
           <label for="email">Konfirmasi Email</label>

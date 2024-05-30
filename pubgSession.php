@@ -25,7 +25,7 @@
         <h2 style="text-align:center">Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
-                <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
+                <img class="promo-img" src="gambar/pubgSlide.jpg" alt="Promo 1">
             </div>
         </div>
         <br>
@@ -50,7 +50,7 @@
         </div>
         <div class="top-up-section">
             <img src="logo/no2.png" alt="nomor" >  
-            <h2 style="text-align:center">Pilih Nominal Top Up</h2>
+            <h2>Pilih Nominal Top Up</h2>
             <div class="item-info">
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
             </div>
@@ -111,6 +111,22 @@
                 <div class="item" onclick="selectItem(5, 1423)">
                     <h3>5 Diamonds</h3>
                     <p>Rp. 1.423</p>
+                </div>
+            </div>
+            <div class="checkout-section">
+                <img src="logo/no3.png" alt="nomor">
+                <h2>Pilih Metode Pembayaran</h2>
+                <div class="checkout-option" onclick="selectCheckout()">
+                    <img src="logo/shopee.png" alt="shopeeLogo">
+                    <h3>Shopee</h3>
+                </div>
+                <div class="checkout-option" onclick="selectCheckout()">
+                    <img src="logo/gopay.png" alt="gopayLogo">
+                    <h3>Gopay</h>
+                </div>
+                <div class="checkout-option" onclick="selectCheckout()">
+                    <img src="logo/dana.png" alt="danaLogo">
+                    <h3>Dana</h3>
                 </div>
             </div>
         </div>
@@ -174,11 +190,11 @@
             <div class="footer-links">
                 <h3>Navigasi</h3>
                 <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Game List</a></li>
-                    <li><a href="#">Keunggulan</a></li>
-                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="index.php">Beranda</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#game-list">Game List</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
                 </ul>
             </div>
             <div class="footer-social">
