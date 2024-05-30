@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HANZ STORE | Mobile Legends: Bang Bang</title>
+    <title>HANZ STORE | Free Fire</title>
     <link rel="stylesheet" href="styles.css">
 </head> 
 <body>
@@ -25,17 +25,10 @@
         <h2 style="text-align:center">Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
-                <img class="promo-img" src="gambar/mlbbSlide.jpg" alt="Promo 1">
-            </div>
-            <div class="slides fade">
-                <img class="promo-img" src="gambar/mlbbSlideKof.jpg" alt="Promo 2">
+                <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
             </div>
         </div>
         <br>
-        <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
     </header>
     
     <!-- Sidebar structure -->

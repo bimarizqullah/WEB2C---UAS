@@ -1,173 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daftar Harga Diamond Free <figure>
-    </figure></title>
-    <link rel="stylesheet" href="styleListGame.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANZ STORE | Mobile Legends: Bang Bang</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Daftar Harga Diamond Free Fire</h1>
-    <form id="orderForm">
-        <label for="userId">ID:</label>
-        <input type="text" id="userId" name="userId" required />
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Jumlah Diamond</th>
-                    <th>Harga (IDR)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>60</td>
-                    <td>15,000</td>
-                </tr>
-                <tr>
-                    <td>325</td>
-                    <td>75,000</td>
-                </tr>
-                <tr>
-                    <td>560</td>
-                    <td>125,000</td>
-                </tr>
-                <tr>
-                    <td>1,100</td>
-                    <td>250,000</td>
-                </tr>
-                <tr>
-                    <td>2,200</td>
-                    <td>500,000</td>
-                </tr>
-                <tr>
-                    <td>5,500</td>
-                    <td>1,250,000</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <label for="diamondAmount">Pilih jumlah diamond:</label>
-        <select id="diamondAmount" name="diamondAmount" class="dropdown">
-            <option value="60">60 Diamonds - 15,000 IDR</option>
-            <option value="325">325 Diamonds - 75,000 IDR</option>
-            <option value="560">560 Diamonds - 125,000 IDR</option>
-            <option value="1100">1,100 Diamonds - 250,000 IDR</option>
-            <option value="2200">2,200 Diamonds - 500,000 IDR</option>
-            <option value="5500">5,500 Diamonds - 1,250,000 IDR</option>
-        </select>
-
-        <label for="paymentMethod">Pilih metode pembayaran:</label>
-        <select id="paymentMethod" name="paymentMethod" class="dropdown">
-            <optgroup label="Retail (Indomaret, Alfamart)">
-                <option value="indomaret">Indomaret</option>
-                <option value="alfamart">Alfamart</option>
-            </optgroup>
-            <optgroup label="Digital Wallet">
-                <option value="dana">DANA</option>
-                <option value="gopay">GoPay</option>
-                <option value="ovo">OVO</option>
-            </optgroup>
-            <optgroup label="Bank Transfer">
-                <option value="bri">BRI</option>
-                <option value="bni">BNI</option>
-                <option value="mandiri">Mandiri</option>
-            </optgroup>
-            <optgroup label="Other">
-                <option value="shopeepay">ShopeePay</option>
-            </optgroup>
-        </select>
-
-        <button type="submit" class="checkout-button">Checkout</button>
-    </form>
-
-    <div id="transactionDetails" class="transaction-details" style="display: none">
-        <h2>Detail Transaksi:</h2>
-        <p><strong>ID:</strong> <span id="detailUserId"></span></p>
-        <p><strong>Username:</strong> <span id="detailUsername"></span></p>
-        <p><strong>Jumlah Diamond:</strong> <span id="detailDiamondAmount"></span></p>
-        <p><strong>Total Harga:</strong> <span id="detailTotalPrice"></span> IDR</p>
-        <p><strong>Metode Pembayaran:</strong> <span id="detailPaymentMethod"></span></p>
+    <header>
+    <div class="navbar">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <img id="logo" src="gambar/logo.jpg" alt="HANZ STORE" style="cursor:pointer">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Cari di HanzStore">
+                <button class="search-btn">
+                    <img src="logo/icon.png" alt="Search">
+                </button>
+            </div>
+            <button type="button" class="login-btn" onclick="halamanLogin()">Daftar</button>
+        </div>
+        <h2 style="text-align:center">Promo Mingguan</h2>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
+            </div>
+        <br>
+    </header>
+    
+    <!-- Sidebar structure -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Beranda</a>
+        <a href="#">Promo</a>
+        <a href="#">Game List</a>
+        <a href="#">Keunggulan</a>
+        <a href="#">Testimoni</a>
     </div>
-
-    <div id="transactionHistory">
-        <h2>Riwayat Transaksi:</h2>
-        <ul id="historyList"></ul>
-        <button id="clearHistoryButton" class="clear-history-button">Clear History</button>
+    <h2 style="text-align:center">__________________________________________________________________________</h2>
+    <div class="container">
+        <div class="user-id-section">
+            <img src="logo/no1.png" alt="nomor" >   
+            <h2>Masukkan User ID</h2>
+                <input type="text" id="user-id" placeholder="User ID">
+                <input type="text" id="zone-id" placeholder="Zone ID">
+            <button onclick="checkUserId()">?</button>
+            <p id="user-status">Selamat Datang <span id="username">SUPER JEYYY.</span></p>
+        </div>
+        <div class="top-up-section">
+            <img src="logo/no2.png" alt="nomor" >  
+            <h2>Pilih Nominal Top Up</h2>
+            <div class="item-info">
+                <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
+            </div>
+            <div class="items">
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(3, 1171)">
+                    <h3>3 Diamonds</h3>
+                    <p>Rp. 1.171</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <div class="item" onclick="selectItem(5, 1423)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 1.423</p>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </div>
     </div>
+    <h2 style="text-align:center">__________________________________________________________________________</h2>
+    
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            updateTransactionHistory();
-        });
+        <main>
+            <section class="keunggulan">
+                <h2>Keunggulan Top Up Game di HANZ STORE</h2>
+                <ul>
+                    <li>
+                        <h3>Mudah, Cepat, dan Aman</h3>
+                        <p>Proses top up game di HANZ STORE sangat mudah dan cepat. Anda hanya perlu memilih game yang ingin di-top up, memasukkan ID game, dan memilih metode pembayaran. HANZ STORE menggunakan sistem keamanan yang canggih untuk memastikan keamanan transaksi Anda.</p>
+                    </li>
+                    <li>
+                        <h3>Tersedia Berbagai Pilihan Game dan Metode Pembayaran</h3>
+                        <p>HANZ STORE menyediakan top up game untuk berbagai jenis game, seperti Mobile Legends, Free Fire, PUBG Mobile, Ragnarok M, dan masih banyak lagi. HANZ STORE juga menyediakan berbagai pilihan metode pembayaran, seperti transfer bank, e-wallet, dan minimarket.</p>
+                    </li>
+                    <li>
+                        <h3>Harga Termurah dan Promo Menarik</h3>
+                        <p>HANZ STORE menawarkan harga top up game yang termurah di Indonesia. HANZ STORE juga sering mengadakan promo menarik, seperti diskon dan cashback.</p>
+                    </li>
+                    <li>
+                        <h3>Layanan Pelanggan yang Ramah dan Cepat</h3>
+                        <p>Tim customer service HANZ STORE selalu siap membantu Anda jika Anda mengalami kesulitan saat melakukan top up game. Anda dapat menghubungi customer service HANZ STORE melalui live chat, email, atau telepon.</p>
+                    </li>
+                </ul>
+            </section>
 
-        document.getElementById("orderForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            const userId = document.getElementById("userId").value;
-            const username = document.getElementById("username").value;
-            const diamondAmount = document.getElementById("diamondAmount").value;
-            const paymentMethod = document.getElementById("paymentMethod").value;
+            <section class="testimoni">
+                <h2>Testimoni Pelanggan</h2>
+                <div class="testimoni-item">
+                    <p class="testimoni-isi">"Top up game di HANZ STORE itu mudah banget! Cuma beberapa klik, game saya sudah di-top up. Harganya juga murah dan banyak promonya. Pokoknya recommended banget!"</p>
+                    <p class="testimoni-nama">- Budi, Jakarta</p>
+                </div>
+                <div class="testimoni-item">
+                    <p class="testimoni-isi">"Saya selalu top up game di HANZ STORE karena prosesnya cepat dan aman. Customer servicenya juga ramah dan membantu. Terima kasih HANZ STORE!"</p>
+                    <p class="testimoni-nama">- Ani, Surabaya</p>
+                </div>
+                <div class="testimoni-item">
+                    <p class="testimoni-isi">"HANZ STORE itu tempat terbaik untuk top up game. Harganya murah, promonya banyak, dan pelayanannya memuaskan. Saya puas banget!"</p>
+                    <p class="testimoni-nama">- Caca, Bandung</p>
+                </div>
+            </section>
+        </main>
+    </di>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="gambar/logo.jpg" alt="HANZ STORE">
+                <p>HANZ STORE - Top Up Termurah Sejagat</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Game List</a></li>
+                    <li><a href="#">Keunggulan</a></li>
+                    <li><a href="#">Testimoni</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li><a href="#"><img src="logo/fb.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="logo/ig.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="logo/yt.png" alt="YouTube"></a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Email: support@hanzstore.com</p>
+                <p>Telepon: +62 812 3456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HANZ STORE. All rights reserved.</p>
+        </div>
+    </footer>
 
-            const diamondPrices = {
-                60: 15000,
-                325: 75000,
-                560: 125000,
-                1100: 250000,
-                2200: 500000,
-                5500: 1250000,
-            };
-
-            const totalPrice = diamondPrices[diamondAmount];
-
-            document.getElementById("detailUserId").textContent = userId;
-            document.getElementById("detailUsername").textContent = username;
-            document.getElementById("detailDiamondAmount").textContent = diamondAmount;
-            document.getElementById("detailTotalPrice").textContent = totalPrice;
-            document.getElementById("detailPaymentMethod").textContent = paymentMethod;
-
-            const transactionDetails = {
-                userId: userId,
-                username: username,
-                diamondAmount: diamondAmount,
-                totalPrice: totalPrice,
-                paymentMethod: paymentMethod,
-            };
-
-            const transactionHistory = JSON.parse(localStorage.getItem("transactionHistory")) || [];
-            transactionHistory.push(transactionDetails);
-            localStorage.setItem("transactionHistory", JSON.stringify(transactionHistory));
-
-            document.getElementById("transactionDetails").style.display = "block";
-
-            updateTransactionHistory();
-        });
-
-        document.getElementById("clearHistoryButton").addEventListener("click", function () {
-            localStorage.removeItem("transactionHistory");
-            updateTransactionHistory();
-        });
-
-        function updateTransactionHistory() {
-            const transactionHistory = JSON.parse(localStorage.getItem("transactionHistory")) || [];
-            const historyList = document.getElementById("historyList");
-            historyList.innerHTML = "";
-
-            transactionHistory.forEach((transaction) => {
-                const listItem = document.createElement("li");
-                listItem.innerHTML = `
-                <p><strong>ID:</strong> ${transaction.userId}</p>
-                <p><strong>Username:</strong> ${transaction.username}</p>
-                <p><strong>Jumlah Diamond:</strong> ${transaction.diamondAmount}</p>
-                <p><strong>Total Harga:</strong> ${transaction.totalPrice} IDR</p>
-                <p><strong>Metode Pembayaran:</strong> ${transaction.paymentMethod}</p>
-                `;
-                historyList.appendChild(listItem);
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-        

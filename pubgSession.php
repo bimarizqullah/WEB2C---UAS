@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HANZ STORE | Mobile Legends: Bang Bang</title>
+    <title>HANZ STORE | Player Unknown: Battleground</title>
     <link rel="stylesheet" href="styles.css">
 </head> 
 <body>
@@ -18,27 +18,18 @@
                 </button>
             </div>
             <div class="user-info">
-                <span id="user-name">Welcome, User</span>
+                <span id="user-name">Welcome, </span>
                 <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
         </div>
         <h2 style="text-align:center">Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
-                <img class="promo-img" src="gambar/mlbbSlide.jpg" alt="Promo 1">
-            </div>
-            <div class="slides fade">
-                <img class="promo-img" src="gambar/mlbbSlideKof.jpg" alt="Promo 2">
+                <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
             </div>
         </div>
         <br>
-        <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
     </header>
-    
-    <!-- Sidebar structure -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Beranda</a>
@@ -121,7 +112,6 @@
                     <h3>5 Diamonds</h3>
                     <p>Rp. 1.423</p>
                 </div>
-                <!-- Add more items as needed -->
             </div>
         </div>
     </div>

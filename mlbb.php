@@ -3,98 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HANZ STORE | Top Up Termurah Sejagat</title>
+    <title>HANZ STORE | Mobile Legends: Bang Bang</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.user-id-section {
-    margin-bottom: 20px;
-}
-
-.user-id-section img {
-    width: 30px;
-    height: 30px;
-}
-
-#user-status {
-    margin-top: 10px;
-    color: green;
-}
-
-.user-id-section h2 {
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#user-id, #zone-id {
-    color: black;
-    padding: 10px;
-    margin-right: 10px;
-    border: 3px solid black;
-    border-radius: 4px;
-}
-.top-up-section {
-    margin-bottom: 20px;
-}
-
-.top-up-section img {
-    width: 30px;
-}
-
-.top-up-section h2 {
-    color: black;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.category button, .item {
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.category button {
-    background-color: #f4f4f4;
-}
-
-.item {
-    background-color: white;
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-}
-.item:hover {
-    background-color: grey;
-}
-
-.item h3 {
-    color: black;
-    margin: 10px 0;
-}
-
-.item-info {
-    color: black;
-}
-
-.item p {
-    color: black;
-    margin: 5px 0;
-}
-
-</style>
 <body>
     <header>
     <div class="navbar">
@@ -108,7 +19,7 @@
             </div>
             <button type="button" class="login-btn" onclick="halamanLogin()">Daftar</button>
         </div>
-        <h2>Promo Mingguan</h2>
+        <h2 style="text-align:center">Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
                 <img class="promo-img" src="gambar/mlbbSlide.jpg" alt="Promo 1">
@@ -133,6 +44,7 @@
         <a href="#">Keunggulan</a>
         <a href="#">Testimoni</a>
     </div>
+    <h2 style="text-align:center">__________________________________________________________________________</h2>
     <div class="container">
         <div class="user-id-section">
             <img src="logo/no1.png" alt="nomor" >   
@@ -147,11 +59,6 @@
             <h2>Pilih Nominal Top Up</h2>
             <div class="item-info">
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
-            </div>
-            <div class="category">
-                <button>Diamond</button>
-                <button>Weekly Diamond Pass</button>
-                <button>Twilight Pass</button>
             </div>
             <div class="items">
                 <div class="item" onclick="selectItem(3, 1171)">
@@ -214,6 +121,7 @@
             </div>
         </div>
     </div>
+    <h2 style="text-align:center">__________________________________________________________________________</h2>
     
 
         <main>
