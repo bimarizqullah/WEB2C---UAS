@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,6 +137,24 @@
                 <h3>Dana</h3>
             </div>
                 
+        </div>
+        <div class="order">
+        <img src="logo/no3.png" alt="nomor">
+            <h2>Detail Transaksi</h2>
+            <button id="notifyButton" type="button" class="order-btn">Pesan</button>
+
+            <div id="overlay" class="overlay"></div>
+
+            <div id="popup" class="popup">
+            <h2>Konfirmasi Pembayaran</h2>
+                <p id="popupMessage">Id: </p>
+                <p id="popupMessage">Zone Id: </p>
+                 <p id="popupMessage">Username: </p>
+                 <p id="popupMessage">Kategori: </p>
+                 <p id="popupMessage">Harga: </p>
+                 <p id="popupMessage">Metode Pembayaran: </p>
+                <button id="closeButton" onclick="notifBerhasil()">Konfirmasi</button>        
+            </div> 
         </div>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>

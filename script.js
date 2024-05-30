@@ -140,3 +140,36 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+
+// notifikasi
+
+document.addEventListener('DOMContentLoaded', () => {
+  const notifyButton = document.getElementById('notifyButton');
+  const popup = document.getElementById('popup');
+  const overlay = document.getElementById('overlay');
+  const closeButton = document.getElementById('closeButton');
+  const popupMessage = document.getElementById('popupMessage');
+  const popupDescription = document.getElementById('popupDescription');
+
+  notifyButton.addEventListener('click', () => {
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+  });
+
+  closeButton.addEventListener('click', () => {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+      if (event.target == overlay) {
+          popup.style.display = 'none';
+          overlay.style.display = 'none';
+      }
+  });
+});
+
+function notifBerhasil() {
+  alert('Transaksi Berhasil !');
+}
+

@@ -69,7 +69,7 @@ h2 {
   font-size: 30px;
 }
 
-.login-btn {
+.login-btn, .order-btn {
   width: 100px;
   background-color: #6a00a0;
   color: white;
@@ -597,20 +597,20 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.user-id-section, .top-up-section, .checkout-section {
+.user-id-section, .top-up-section, .checkout-section, .order {
   margin-bottom: 50px;
   position: relative;
   padding-left: 50px;
   margin-bottom: 20px;
 }
 
-.user-id-section img, .top-up-section img, .checkout-section img {
+.user-id-section img, .top-up-section img, .checkout-section img, .order img {
   position: absolute;
   width: 30px;
   height: 30px;
 }
 
-.user-id-section h2, .top-up-section h2, .checkout-section h2 {
+.user-id-section h2, .top-up-section h2, .checkout-section h2, .order h2 {
   padding-left: 50px;
   color: black;
   margin-top: 20px;
@@ -678,3 +678,67 @@ a:hover {
   color: black;
   margin: 5px 0;
 }
+
+/* button notif */
+
+#closeButton {
+  width: 15%;
+  margin: 7% 34vh;
+  background-color: #6a00a0;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup {
+  width: 40%;
+  height: 40%;  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1000;
+}
+
+.popup h2 {
+  text-align: center;
+  padding-left: 0px;
+}
+
+.popup p {
+
+  padding-left: 20px;
+  color: black;
+  margin: 0 0 20px 0;
+}
+
+#popup {
+  display: none;
+}
+
+.background {
+  background-color: #0056b3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+
+
+
