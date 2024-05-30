@@ -193,7 +193,7 @@
                 <ul>
                     <li><a href="index.php">Beranda</a></li>
                     <li><a href="#promo">Promo</a></li>
-                    <li><a href="#game-list">Game List</a></li>
+                    <li><a href="index.php #game-list">Game List</a></li>
                     <li><a href="#keunggulan">Keunggulan</a></li>
                     <li><a href="#testimoni">Testimoni</a></li>
                 </ul>
@@ -201,9 +201,9 @@
             <div class="footer-social">
                 <h3>Ikuti Kami</h3>
                 <ul>
-                    <li><a href="#"><img src="logo/fb.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="logo/ig.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="logo/yt.png" alt="YouTube"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="logo/fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/farhanrmdhan__?igsh=Z21yNHh2eG1lcGF6"><img src="logo/ig.png" alt="Instagram"></a></li>
+                    <li><a href="https://youtu.be/melkrLge3WY?si=lyS1pCDCBoOdP0JO"><img src="logo/yt.png" alt="YouTube"></a></li>
                 </ul>
             </div>
             <div class="footer-contact">

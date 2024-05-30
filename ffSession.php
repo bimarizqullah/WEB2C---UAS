@@ -23,7 +23,7 @@
             </div>
 
         </div>
-        <h2 style="text-align:center">Promo Mingguan</h2>
+        <h2 id="promo" style="text-align:center">Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
                 <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
@@ -37,11 +37,11 @@
     <!-- side bar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Beranda</a>
-        <a href="#">Promo</a>
-        <a href="#">Game List</a>
-        <a href="#">Keunggulan</a>
-        <a href="#">Testimoni</a>
+        <a href="indexSession.php">Beranda</a>
+        <a href="#promo">Promo</a>
+        <a href="indexSession.php #game-list">Game List</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#testimoni">Testimoni</a>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     <div class="container">
@@ -140,7 +140,7 @@
     
 
         <main>
-            <section class="keunggulan">
+            <section id="keunggulan" class="keunggulan">
                 <h2>Keunggulan Top Up Game di HANZ STORE</h2>
                 <ul>
                     <li>
@@ -162,7 +162,7 @@
                 </ul>
             </section>
 
-            <section class="testimoni">
+            <section id="testimoni" class="testimoni">
                 <h2>Testimoni Pelanggan</h2>
                 <div class="testimoni-item">
                     <p class="testimoni-isi">"Top up game di HANZ STORE itu mudah banget! Cuma beberapa klik, game saya sudah di-top up. Harganya juga murah dan banyak promonya. Pokoknya recommended banget!"</p>
@@ -197,9 +197,9 @@
             <div class="footer-links">
                 <h3>Navigasi</h3>
                 <ul>
-                    <li><a href="index.php">Beranda</a></li>
+                    <li><a href="indexSession.php">Beranda</a></li>
                     <li><a href="#promo">Promo</a></li>
-                    <li><a href="#game-list">Game List</a></li>
+                    <li><a href="indexSession.php #game-list">Game List</a></li>
                     <li><a href="#keunggulan">Keunggulan</a></li>
                     <li><a href="#testimoni">Testimoni</a></li>
                 </ul>
@@ -207,9 +207,9 @@
             <div class="footer-social">
                 <h3>Ikuti Kami</h3>
                 <ul>
-                    <li><a href="#"><img src="logo/fb.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="logo/ig.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="logo/yt.png" alt="YouTube"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="logo/fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/farhanrmdhan__?igsh=Z21yNHh2eG1lcGF6"><img src="logo/ig.png" alt="Instagram"></a></li>
+                    <li><a href="https://youtu.be/melkrLge3WY?si=lyS1pCDCBoOdP0JO"><img src="logo/yt.png" alt="YouTube"></a></li>
                 </ul>
             </div>
             <div class="footer-contact">

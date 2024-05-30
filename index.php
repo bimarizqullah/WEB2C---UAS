@@ -129,15 +129,15 @@
             <div class="footer-social">
                 <h3>Ikuti Kami</h3>
                 <ul>
-                    <li><a href="#"><img src="logo/fb.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="logo/ig.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="logo/yt.png" alt="YouTube"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="logo/fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/farhanrmdhan__?igsh=Z21yNHh2eG1lcGF6"><img src="logo/ig.png" alt="Instagram"></a></li>
+                    <li><a href="https://youtu.be/melkrLge3WY?si=lyS1pCDCBoOdP0JO"><img src="logo/yt.png" alt="YouTube"></a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h3>Hubungi Kami</h3>
-                <p>Email: support@hanzstore.com</p>
-                <p>Telepon: +62 812 3456 789</p>
+                <p>Email: @hanzstore.com</p>
+                <p>Telepon: +62 881 036 357 795 </p>
             </div>
         </div>
         <div class="footer-bottom">
