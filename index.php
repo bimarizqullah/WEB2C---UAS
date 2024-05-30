@@ -10,7 +10,7 @@
     <header>
         <div class="navbar">
             <button class="openbtn" onclick="openNav()">☰</button>
-            <img src="gambar/logo.jpg" alt="HANZ STORE">
+            <img src="gambar/logo.jpg" alt="HANZ STORE" style="cursor:pointer">
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Cari di HanzStore">
                 <button class="search-btn">

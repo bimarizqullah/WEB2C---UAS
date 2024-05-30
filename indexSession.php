@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HANZ STORE | User Session</title>
+    <title>HANZ STORE | Top Up Termurah Sejagat</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="navbar">
-            <img src="gambar/logo.jpg" alt="HANZ STORE">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <img src="gambar/logo.jpg" alt="HANZ STORE" style="cursor:pointer">
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Cari di HanzStore">
                 <button class="search-btn">
@@ -21,9 +22,7 @@
                 <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
         </div>
-    </header>
-    <main>
-    <h2>Promo Mingguan</h2>
+        <h2>Promo Mingguan</h2>
         <div class="slideshow-container">
             <div class="slides fade">
                 <img class="promo-img" src="gambar/mlbbSlide.jpg" alt="Promo 1">
@@ -46,27 +45,81 @@
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </header>
-    <div class="game-list">
-        <h2>List Game</h2>
-        <div class="recommendation-list" style="cursor:pointer;">
-            <div class="recommendation-item">
-                <img id="mlbb" src="gambar/1.jpg" alt="Mobile Legends">
-            </div>
-            <div class="recommendation-item">
-                <img id="ff" src="gambar/2.jpg" alt="Free Fire">
-            </div>
-            <div class="recommendation-item">
-                <img id="pubg" src="gambar/3.jpg" alt="PUBG">
+    
+    <!-- Sidebar structure -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Beranda</a>
+        <a href="#">Promo</a>
+        <a href="#">Game List</a>
+        <a href="#">Keunggulan</a>
+        <a href="#">Testimoni</a>
+    </div>
+
+    <div id="main">
+        <div class="game-list">
+            <h2>List Game</h2>
+            <div class="recommendation-list" style="cursor:pointer;">
+                <div class="recommendation-item">
+                    <img id="mlbb" src="gambar/1.jpg" alt="Mobile Legends">
+                </div>
+                <div class="recommendation-item">
+                    <img id="ff" src="gambar/2.jpg" alt="Free Fire">
+                </div>
+                <div class="recommendation-item">
+                    <img id="pubg" src="gambar/3.jpg" alt="PUBG">
+                </div>
             </div>
         </div>
+
+        <main>
+            <section class="keunggulan">
+                <h2>Keuntungan Top Up Game di HANZ STORE</h2>
+                <ul>
+                    <li>
+                        <h3>Mudah, Cepat, dan Aman</h3>
+                        <p>Proses top up game di HANZ STORE sangat mudah dan cepat. Anda hanya perlu memilih game yang ingin di-top up, memasukkan ID game, dan memilih metode pembayaran. HANZ STORE menggunakan sistem keamanan yang canggih untuk memastikan keamanan transaksi Anda.</p>
+                    </li>
+                    <li>
+                        <h3>Tersedia Berbagai Pilihan Game dan Metode Pembayaran</h3>
+                        <p>HANZ STORE menyediakan top up game untuk berbagai jenis game, seperti Mobile Legends, Free Fire, PUBG Mobile, Ragnarok M, dan masih banyak lagi. HANZ STORE juga menyediakan berbagai pilihan metode pembayaran, seperti transfer bank, e-wallet, dan minimarket.</p>
+                    </li>
+                    <li>
+                        <h3>Harga Termurah dan Promo Menarik</h3>
+                        <p>HANZ STORE menawarkan harga top up game yang termurah di Indonesia. HANZ STORE juga sering mengadakan promo menarik, seperti diskon dan cashback.</p>
+                    </li>
+                    <li>
+                        <h3>Layanan Pelanggan yang Ramah dan Cepat</h3>
+                        <p>Tim customer service HANZ STORE selalu siap membantu Anda jika Anda mengalami kesulitan saat melakukan top up game. Anda dapat menghubungi customer service HANZ STORE melalui live chat, email, atau telepon.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="testimoni">
+                <h2>Testimoni Pelanggan</h2>
+                <div class="testimoni-item">
+                    <p class="testimoni-isi">"Top up game di HANZ STORE itu mudah banget! Cuma beberapa klik, game saya sudah di-top up. Harganya juga murah dan banyak promonya. Pokoknya recommended banget!"</p>
+                    <p class="testimoni-nama">- Budi, Jakarta</p>
+                </div>
+                <div class="testimoni-item">
+                    <p class="testimoni-isi">"Saya selalu top up game di HANZ STORE karena prosesnya cepat dan aman. Customer servicenya juga ramah dan membantu. Terima kasih HANZ STORE!"</p>
+                    <p class="testimoni-nama">- Ani, Surabaya</p>
+                </div>
+                <div class="testimoni-item">
+                    <p class="testimoni-isi">"HANZ STORE itu tempat terbaik untuk top up game. Harganya murah, promonya banyak, dan pelayanannya memuaskan. Saya puas banget!"</p>
+                    <p class="testimoni-nama">- Caca, Bandung</p>
+                </div>
+            </section>
+        </main>
+    </div>
     </div>
         <h2>Your Session</h2>
-        <div class="session-info">
-            <p>Username: <span id="session-username">User123</span></p>
-            <p>Email: <span id="session-email">user@example.com</span></p>
-            <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
-        </div>
-    </main> 
+            <div class="session-info">
+                <p>Username: <span id="session-username">User123</span></p>
+                <p>Email: <span id="session-email">user@example.com</span></p>
+                <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
+            </div>
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
@@ -80,7 +133,7 @@
                     <li><a href="#">Promo</a></li>
                     <li><a href="#">Game List</a></li>
                     <li><a href="#">Keunggulan</a></li>
-                    <li><a href="#">Kontak Kami</a></li>
+                    <li><a href="#">Testimoni</a></li>
                 </ul>
             </div>
             <div class="footer-social">
