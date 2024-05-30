@@ -36,7 +36,6 @@
             <span class="dot" onclick="currentSlide(2)"></span>
         </div>
     </header>
-    <!-- side bar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Beranda</a>
