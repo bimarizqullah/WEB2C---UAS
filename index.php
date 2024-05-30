@@ -120,7 +120,7 @@
                 <h3>Navigasi</h3>
                 <ul>
                     <li><a href="index.php">Beranda</a></li>
-                    <li><a href="promo">Promo</a></li>
+                    <li><a href="#promo">Promo</a></li>
                     <li><a href="#game-list">Game List</a></li>
                     <li><a href="#keunggulan">Keunggulan</a></li>
                     <li><a href="#testimoni">Testimoni</a></li>
