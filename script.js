@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 /*mlbb action */
 document.addEventListener("DOMContentLoaded", function () {
   const image = document.getElementById("mlbb");
