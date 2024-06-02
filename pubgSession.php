@@ -61,31 +61,30 @@
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
             </div>
             <div class="items">
-                <div class="item" onclick="selectitemPubg('50 diamonds', 7207)">
-                    <h3>50 Diamonds</h3>
-                    <p>Rp. 7.207</p>
+                <div class="item" onclick="selectitemPubg('60 UC',15700)">
+                    <h3>60 UC</h3>
+                    <p>Rp. 15.700</p>
                 </div>
-                <div class="item" onclick="selectitemPubg('70 diamonds', 9009)">
-                    <h3>70 Diamonds</h3>
-                    <p>Rp. 9.009</p>
+                <div class="item" onclick="selectitemPubg('70 UC', 78500)">
+                    <h3>325 UC</h3>
+                    <p>Rp. 78.500</p>
                 </div>
-                <div class="item" onclick="selectitemPubg('140 diamonds', 18018)">
-                    <h3>140 Diamonds</h3>
-                    <p>Rp. 18.018</p>
+                <div class="item" onclick="selectitemPubg('660 UC', 15700)">
+                    <h3>660 UC</h3>
+                    <p>Rp. 157.000</p>
                 </div>
-                <div class="item" onclick="selectitemPubg('355 diamonds', 45045)">
-                    <h3>355 Diamonds</h3>
-                    <p>Rp. 45045</p>
+                <div class="item" onclick="selectitemPubg('1800 UC', 392500)">
+                    <h3>1800 UC</h3>
+                    <p>Rp. 392.500</p>
                 </div>
-                <div class="item" onclick="selectitemPubg('720 diamonds', 90090)">
-                    <h3>720 Diamonds</h3>
-                    <p>Rp. 90.090</p>
+                <div class="item" onclick="selectitemPubg('3850 UC', 785000)">
+                    <h3>3850 UC</h3>
+                    <p>Rp. 785.000</p>
                 </div>
-                <div class="item" onclick="selectitemPubg('1450 diamonds', 180180)">
-                    <h3>1450 Diamonds</h3>
-                    <p>Rp. 180.180</p>
+                <div class="item" onclick="selectitemPubg('8100 UC', 1570000)">
+                    <h3>8100 UC</h3>
+                    <p>Rp. 1.570.000</p>
                 </div>
-                <!-- Add more items as needed -->
             </div>
         </div>
         <div class="checkout-section">

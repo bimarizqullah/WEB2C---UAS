@@ -80,6 +80,10 @@ h2 {
   cursor: pointer;
 }
 
+.order-btn:hover {
+  background-color: #4b0070;  
+}
+
 .logout-btn {
   width: 100px;
   background-color: #6a00a0;
@@ -664,6 +668,7 @@ a:hover {
   background-color: grey;
 }
 
+
 .item h3, .checkout-option h3 {
   padding: 5px 70px ;
   color: black;
@@ -696,6 +701,10 @@ a:hover {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+#closeButton:hover, #closeButton2:hover {
+  background-color: #4b0070;
 }
 
 .popup {

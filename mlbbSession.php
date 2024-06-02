@@ -63,29 +63,69 @@
                     <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
                 </div>
                 <div class="items">
-                    <div class="item" onclick="selectItem('50 diamonds', 7207)">
-                        <h3>50 Diamonds</h3>
-                        <p>Rp. 7.207</p>
+                    <div class="item" onclick="selectItem('3 diamonds', 1171)">
+                        <h3>3 Diamonds</h3>
+                        <p>Rp. 1.171</p>
                     </div>
-                    <div class="item" onclick="selectItem('70 diamonds', 9009)">
-                        <h3>70 Diamonds</h3>
-                        <p>Rp. 9.009</p>
+                    <div class="item" onclick="selectItem('5 diamonds', 1423)">
+                        <h3>5 Diamonds</h3>
+                        <p>Rp. 1.423</p>
                     </div>
-                    <div class="item" onclick="selectItem('140 diamonds', 18018)">
-                        <h3>140 Diamonds</h3>
-                        <p>Rp. 18.018</p>
+                    <div class="item" onclick="selectItem('12 diamonds', 3232)">
+                        <h3>12 Diamonds</h3>
+                        <p>Rp. 3.232</p>
                     </div>
-                    <div class="item" onclick="selectItem('355 diamonds', 45045)">
-                        <h3>355 Diamonds</h3>
-                        <p>Rp. 45.045</p>
+                    <div class="item" onclick="selectItem('19 diamonds', 5223)">
+                        <h3>19 Diamonds</h3>
+                        <p>Rp. 5.223</p>
                     </div>
-                    <div class="item" onclick="selectItem('720 diamonds', 90090)">
-                        <h3>720 Diamonds</h3>
-                        <p>Rp. 90.090</p>
+                    <div class="item" onclick="selectItem('28 diamonds', 7600)">
+                        <h3>28 Diamonds</h3>
+                        <p>Rp. 7.600</p>
                     </div>
-                    <div class="item" onclick="selectItem('1450 diamonds', 180180)">
-                        <h3>1450 Diamonds</h3>
-                        <p>Rp. 180.180</p>
+                    <div class="item" onclick="selectItem('44 diamonds', 11400)">
+                        <h3>44 Diamonds</h3>
+                        <p>Rp. 11.400</p>
+                    </div>
+                    <div class="item" onclick="selectItem('59 diamonds', 15200)">
+                        <h3>59 Diamonds</h3>
+                        <p>Rp. 15.200</p>
+                    </div>
+                    <div class="item" onclick="selectItem('85 diamonds', 21850)">
+                        <h3>85 Diamonds</h3>
+                        <p>Rp. 21.850</p>
+                    </div>
+                    <div class="item" onclick="selectItem('170 diamonds', 43700)">
+                        <h3>170 Diamonds</h3>
+                        <p>Rp. 43.700</p>
+                    </div>
+                    <div class="item" onclick="selectItem('240 diamonds', 61750)">
+                        <h3>240 Diamonds</h3>
+                        <p>Rp. 61.750</p>
+                    </div>
+                    <div class="item" onclick="selectItem('295 diamonds', 76000)">
+                        <h3>295 Diamonds</h3>
+                        <p>Rp. 76.000</p>
+                    </div>
+                    <div class="item" onclick="selectItem('408 diamonds', 104500)">
+                        <h3>408 Diamonds</h3>
+                        <p>Rp. 104.500</p>
+                    </div>
+                    <div class="item" onclick="selectItem('568 diamonds', 142500)">
+                        <h3>568 Diamonds</h3>
+                        <p>Rp. 142.500</p>
+                    </div>
+                    <div class="item" onclick="selectItem('875 diamonds', 218500)">
+                        <h3>875 Diamonds</h3>
+                        <p>Rp. 218.500</p>
+                    </div>
+                    <div class="item" onclick="selectItem('2010 diamonds', 475000)">
+                        <h3>2010 Diamonds</h3>
+                        <p>Rp. 475.000</p>
+                    </div>
+                    <div class="item" onclick="selectItem('44 diamonds', 1140000)">
+                        <h3>4830 Diamonds</h3>
+                        <p>Rp. 1.140.000</p>
                     </div>
                 </div>
             </div>

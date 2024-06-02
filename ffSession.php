@@ -63,6 +63,14 @@
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
             </div>
             <div class="items">
+                <div class="item" onclick="selectItem('5 diamonds', 901)">
+                    <h3>5 Diamonds</h3>
+                    <p>Rp. 901</p>
+                </div>
+                <div class="item" onclick="selectItem('12 diamonds', 1802)">
+                    <h3>12 Diamonds</h3>
+                    <p>Rp. 1.802</p>
+                </div>
                 <div class="item" onclick="selectitemff('50 diamonds', 7207)">
                     <h3>50 Diamonds</h3>
                     <p>Rp. 7.207</p>
@@ -87,7 +95,26 @@
                     <h3>1450 Diamonds</h3>
                     <p>Rp. 180.180</p>
                 </div>
-                <!-- Add more items as needed -->
+                <div class="item" onclick="selectItem('2180 diamonds', 270270)">
+                    <h3>2180 Diamonds</h3>
+                    <p>Rp. 270.270</p>
+                </div>
+                <div class="item" onclick="selectItem('3640 diamonds', 450450)">
+                    <h3>3640 Diamonds</h3>
+                    <p>Rp. 450.450</p>
+                </div>
+                <div class="item" onclick="selectItem('7290 diamonds', 900901)">
+                    <h3>7290 Diamonds</h3>
+                    <p>Rp. 900.901</p>
+                </div>
+                <div class="item" onclick="selectItem('36500 diamonds', 4504505)">
+                    <h3>36500 Diamonds</h3>
+                    <p>Rp. 4.504.505</p>
+                </div>
+                <div class="item" onclick="selectItem('73100 diamonds', 9009009)">
+                    <h3>73100 Diamonds</h3>
+                    <p>Rp. 9.009.009</p>
+                </div>
             </div>
         </div>
         <div class="checkout-section">
