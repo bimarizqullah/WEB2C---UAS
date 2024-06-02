@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HANZ STORE | Mobile Legends: Bang Bang</title>
+    <title>HANZ STORE | Free Fire</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -43,12 +43,13 @@
         <a href="#">Testimoni</a>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
-   <form action="checkoutFf.php" method="POST">
+   <form action="checkoutFf.php" method="POST" id="confirm">
     <div class="container">
         <div class="user-id-section">
             <img src="logo/no1.png" alt="nomor">
             <h2>Masukkan User ID</h2>
             <input type="text" id="user-id" name="user_id" placeholder="User ID" required>
+            <input type="text" id="user-name" name="username" placeholder="Username" required>
             <button type="button" onclick="checkUserId()">?</button>
         </div>
         <div class="top-up-section">
@@ -58,27 +59,27 @@
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
             </div>
             <div class="items">
-                <div class="item" onclick="selectItem('50 diamonds', 7207)">
+                <div class="item" onclick="selectitemff('50 diamonds', 7207)">
                     <h3>50 Diamonds</h3>
                     <p>Rp. 7.207</p>
                 </div>
-                <div class="item" onclick="selectItem('70 diamonds', 9009)">
+                <div class="item" onclick="selectitemff('70 diamonds', 9009)">
                     <h3>70 Diamonds</h3>
                     <p>Rp. 9.009</p>
                 </div>
-                <div class="item" onclick="selectItem('140 diamonds', 18018)">
+                <div class="item" onclick="selectitemff('140 diamonds', 18018)">
                     <h3>140 Diamonds</h3>
                     <p>Rp. 18.018</p>
                 </div>
-                <div class="item" onclick="selectItem('355 diamonds', 45045)">
+                <div class="item" onclick="selectitemff('355 diamonds', 45045)">
                     <h3>355 Diamonds</h3>
                     <p>Rp. 45045</p>
                 </div>
-                <div class="item" onclick="selectItem('720 diamonds', 90090)">
+                <div class="item" onclick="selectitemff('720 diamonds', 90090)">
                     <h3>720 Diamonds</h3>
                     <p>Rp. 90.090</p>
                 </div>
-                <div class="item" onclick="selectItem('1450 diamonds', 180180)">
+                <div class="item" onclick="selectitemff('1450 diamonds', 180180)">
                     <h3>1450 Diamonds</h3>
                     <p>Rp. 180.180</p>
                 </div>
@@ -88,38 +89,38 @@
         <div class="checkout-section">
             <img src="logo/no3.png" alt="nomor">
             <h2>Pilih Metode Pembayaran</h2>
-            <div class="checkout-option" onclick="selectCheckout('Shopee')">
+            <div class="checkout-option" onclick="selectCheckoutff('Shopee')">
                 <img src="logo/shopee.png" alt="shopeeLogo">
                 <h3>Shopee</h3>
             </div>
-            <div class="checkout-option" onclick="selectCheckout('Gopay')">
+            <div class="checkout-option" onclick="selectCheckoutff('Gopay')">
                 <img src="logo/gopay.png" alt="gopayLogo">
                 <h3>Gopay</h3>
             </div>
-            <div class="checkout-option" onclick="selectCheckout('Dana')">
+            <div class="checkout-option" onclick="selectCheckoutff('Dana')">
                 <img src="logo/dana.png" alt="danaLogo">
                 <h3>Dana</h3>
             </div>
         </div>
         <div class="order">
             <img src="logo/no3.png" alt="nomor">
-            <h2>Detail Transaksi</h2>
+            <h2>Pemesanan</h2>
             <button id="notifyButton" type="button" class="order-btn" onclick="showPopup()">Pesan</button>
             <div id="overlay" class="overlay"></div>
-            <div id="popup" class="popup">
-                <h2>Konfirmasi Pembayaran</h2>
-                <p id="popupUserId">Id: </p>
-                <p id="popupUsername">Username: </p>
-                <p id="popupItem">Kategori: </p>
-                <p id="popupPrice">Harga: </p>
-                <p id="popupPaymentMethod">Metode Pembayaran: </p>
-            <div class="classButton">
-                <button id="closeButton">Batalkan Pesanan</button>
-                <button id="closeButton2" onclick="notifberhasil()">Konfirmasi</button>
-            </div>
+                <div id="popup" class="popup">
+                    <h2>Konfirmasi Pemesanan</h2>
+                    <p>Id: <span id="userIdSpanff"></span></p>
+                    <p>Username: <span id="usernameSpanff"></span></p>
+                    <p>Kategori: <span id="itemnameSpanff"></span></p>
+                    <p>Harga: <span id="priceSpanff"></span></p>
+                    <p>Metode Pembayaran: <span id="paymentMethodSpanff"></span></p>
+                    <div class="classButton">
+                    <button type="button" id="closeButton" class="order-btn">Batalkan Pesanan</button>
+                    <button type="button" id="closeButton2" onclick="confirmOrderff()" class="order-btn">Konfirmasi</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <input type="hidden" name="username" id="hidden-username" value="SUPER JEYYY">
         <input type="hidden" name="item_name" id="hidden-item-name" required>
         <input type="hidden" name="price" id="hidden-price" required>
         <input type="hidden" name="payment_method" id="hidden-payment-method" required>

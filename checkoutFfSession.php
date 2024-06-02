@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         username = VALUES(username)";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: ff.php");
+        header("Location: ffSession.php");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

@@ -18,7 +18,6 @@
                 </button>
             </div>
             <div class="user-info">
-                <span id="user">Welcome, User</span>
                 <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
 
@@ -48,7 +47,7 @@
         <a href="#testimoni">Testimoni</a>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
-    <form action="checkoutMlbb.php" method="POST" id="confirm">
+    <form action="checkoutMlbbSession.php" method="POST" id="confirm">
         <div class="container">
             <div class="user-id-section">
                 <img src="logo/no1.png" alt="nomor">
@@ -106,6 +105,7 @@
                     <h3>Dana</h3>
                 </div>
             </div>
+            <!-- p -->
             <div class="order">
                 <img src="logo/no3.png" alt="nomor">
                 <h2>Pemesanan</h2>
@@ -176,10 +176,9 @@
     </div>
     </div>
     </div>
-        <h2>Your Session</h2>
+        <h2>Sesi Anda</h2>
             <div class="session-info">
-                <p>Halo, <span id="session-username">User123</span></p>
-                <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
+                <p>Sesi Dimulai: <span id="session-start">2024-05-29 10:00:00</span></p>
             </div>
     </div>
     <footer class="footer">

@@ -18,7 +18,6 @@
                 </button>
             </div>
             <div class="user-info">
-                <span id="user-name">Welcome, User</span>
                 <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
 
@@ -28,10 +27,14 @@
             <div class="slides fade">
                 <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 1">
             </div>
+            <div class="slides fade">
+                <img class="promo-img" src="gambar/ffSlide2.png" alt="Promo 2">
+            </div>
         </div>
         <br>
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
         </div>
     </header>
     <!-- side bar -->
@@ -44,77 +47,45 @@
         <a href="#testimoni">Testimoni</a>
     </div>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
+    <form action="checkoutFfSession.php" method="POST" id="confirm">
     <div class="container">
         <div class="user-id-section">
-            <img src="logo/no1.png" alt="nomor" >   
+            <img src="logo/no1.png" alt="nomor">
             <h2>Masukkan User ID</h2>
-                <input type="text" id="user-id" placeholder="User ID">
-                <input type="text" id="zone-id" placeholder="Zone ID">
-            <button onclick="checkUserId()">?</button>
-            <p id="user-status">Selamat Datang <span id="username">SUPER JEYYY.</span></p>
+            <input type="text" id="user-id" name="user_id" placeholder="User ID" required>
+            <input type="text" id="user-name" name="username" placeholder="Username" required>
+            <button type="button" onclick="checkUserId()">?</button>
         </div>
         <div class="top-up-section">
-            <img src="logo/no2.png" alt="nomor" >  
+            <img src="logo/no2.png" alt="nomor">
             <h2>Pilih Nominal Top Up</h2>
             <div class="item-info">
                 <span id="item-info">9,482 item dibeli dalam satu jam terakhir</span>
             </div>
             <div class="items">
-                <div class="item" onclick="selectItem(3, 1171)">
-                    <h3>3 Diamonds</h3>
-                    <p>Rp. 1.171</p>
+                <div class="item" onclick="selectitemff('50 diamonds', 7207)">
+                    <h3>50 Diamonds</h3>
+                    <p>Rp. 7.207</p>
                 </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
+                <div class="item" onclick="selectitemff('70 diamonds', 9009)">
+                    <h3>70 Diamonds</h3>
+                    <p>Rp. 9.009</p>
                 </div>
-                <div class="item" onclick="selectItem(3, 1171)">
-                    <h3>3 Diamonds</h3>
-                    <p>Rp. 1.171</p>
+                <div class="item" onclick="selectitemff('140 diamonds', 18018)">
+                    <h3>140 Diamonds</h3>
+                    <p>Rp. 18.018</p>
                 </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
+                <div class="item" onclick="selectitemff('355 diamonds', 45045)">
+                    <h3>355 Diamonds</h3>
+                    <p>Rp. 45045</p>
                 </div>
-                <div class="item" onclick="selectItem(3, 1171)">
-                    <h3>3 Diamonds</h3>
-                    <p>Rp. 1.171</p>
+                <div class="item" onclick="selectitemff('720 diamonds', 90090)">
+                    <h3>720 Diamonds</h3>
+                    <p>Rp. 90.090</p>
                 </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
-                </div>
-                <div class="item" onclick="selectItem(3, 1171)">
-                    <h3>3 Diamonds</h3>
-                    <p>Rp. 1.171</p>
-                </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
-                </div>
-                <div class="item" onclick="selectItem(3, 1171)">
-                    <h3>3 Diamonds</h3>
-                    <p>Rp. 1.171</p>
-                </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
-                </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
-                </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
-                </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
-                </div>
-                <div class="item" onclick="selectItem(5, 1423)">
-                    <h3>5 Diamonds</h3>
-                    <p>Rp. 1.423</p>
+                <div class="item" onclick="selectitemff('1450 diamonds', 180180)">
+                    <h3>1450 Diamonds</h3>
+                    <p>Rp. 180.180</p>
                 </div>
                 <!-- Add more items as needed -->
             </div>
@@ -122,38 +93,43 @@
         <div class="checkout-section">
             <img src="logo/no3.png" alt="nomor">
             <h2>Pilih Metode Pembayaran</h2>
-            <div class="checkout-option" onclick="selectCheckout()">
+            <div class="checkout-option" onclick="selectCheckoutff('Shopee')">
                 <img src="logo/shopee.png" alt="shopeeLogo">
                 <h3>Shopee</h3>
             </div>
-            <div class="checkout-option" onclick="selectCheckout()">
+            <div class="checkout-option" onclick="selectCheckoutff('Gopay')">
                 <img src="logo/gopay.png" alt="gopayLogo">
                 <h3>Gopay</h3>
             </div>
-            <div class="checkout-option" onclick="selectCheckout()">
+            <div class="checkout-option" onclick="selectCheckoutff('Dana')">
                 <img src="logo/dana.png" alt="danaLogo">
                 <h3>Dana</h3>
             </div>
         </div>
         <div class="order">
-        <img src="logo/no3.png" alt="nomor">
-            <h2>Detail Transaksi</h2>
-            <button id="notifyButton" type="button" class="order-btn">Pesan</button>
-
+            <img src="logo/no3.png" alt="nomor">
+            <h2>Pemesanan</h2>
+            <button id="notifyButton" type="button" class="order-btn" onclick="showPopup()">Pesan</button>
             <div id="overlay" class="overlay"></div>
-
-            <div id="popup" class="popup">
-            <h2>Konfirmasi Pembayaran</h2>
-                <p id="popupMessage">Id: </p>
-                <p id="popupMessage">Zone Id: </p>
-                 <p id="popupMessage">Username: </p>
-                 <p id="popupMessage">Kategori: </p>
-                 <p id="popupMessage">Harga: </p>
-                 <p id="popupMessage">Metode Pembayaran: </p>
-                <button id="closeButton" onclick="notifBerhasil()">Konfirmasi</button>        
-            </div> 
+                <div id="popup" class="popup">
+                    <h2>Konfirmasi Pemesanan</h2>
+                    <p>Id: <span id="userIdSpanff"></span></p>
+                    <p>Username: <span id="usernameSpanff"></span></p>
+                    <p>Kategori: <span id="itemnameSpanff"></span></p>
+                    <p>Harga: <span id="priceSpanff"></span></p>
+                    <p>Metode Pembayaran: <span id="paymentMethodSpanff"></span></p>
+                    <div class="classButton">
+                    <button type="button" id="closeButton" class="order-btn">Batalkan Pesanan</button>
+                    <button type="button" id="closeButton2" onclick="confirmOrderff()" class="order-btn">Konfirmasi</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <input type="hidden" name="item_name" id="hidden-item-name" required>
+        <input type="hidden" name="price" id="hidden-price" required>
+        <input type="hidden" name="payment_method" id="hidden-payment-method" required>
     </div>
+</form>
     <h2 style="text-align:center">__________________________________________________________________________</h2>
     
 
@@ -200,10 +176,9 @@
     </div>
     </div>
     </div>
-        <h2>Your Session</h2>
+        <h2>Sesi Anda</h2>
             <div class="session-info">
-                <p>Halo, <span id="session-username">User123</span></p>
-                <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
+                <p>Sesi Dimulai: <span id="session-start">2024-05-29 10:00:00</span></p>
             </div>
     </div>
     <footer class="footer">

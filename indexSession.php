@@ -18,7 +18,6 @@
                 </button>
             </div>
             <div class="user-info">
-                <span id="user">Welcome, User</span>
                 <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
         </div>
@@ -117,10 +116,9 @@
         </main>
     </div>
     </div>
-        <h2>Your Session</h2>
+        <h2>Sesi Anda</h2>
             <div class="session-info">
-                <p>Halo, <span id="session-username">User123</span></p>
-                <p>Session Start: <span id="session-start">2024-05-29 10:00:00</span></p>
+                <p>Sesi Dimulai: <span id="session-start">2024-05-29 10:00:00</span></p>
             </div>
     </div>
     <footer class="footer">

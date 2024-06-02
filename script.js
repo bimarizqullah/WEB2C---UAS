@@ -144,7 +144,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
-// notifikasi
+// notifikasi mlbb
 
 document.addEventListener('DOMContentLoaded', () => {
   const notifyButton = document.getElementById('notifyButton');
@@ -192,6 +192,106 @@ function selectCheckout(method) {
 }
 
 function confirmOrder() {
+  document.getElementById('confirm').submit();
+}
+
+//notifikasi ff
+
+document.addEventListener('DOMContentLoaded', () => {
+  const notifyButton = document.getElementById('notifyButton');
+  const popup = document.getElementById('popup');
+  const overlay = document.getElementById('overlay');
+  const closeButton = document.getElementById('closeButton');
+  
+  notifyButton.addEventListener('click', () => {
+      document.getElementById('userIdSpanff').innerText = document.getElementById('user-id').value;
+      document.getElementById('usernameSpanff').innerText = document.getElementById('user-name').value;
+      document.getElementById('itemnameSpanff').innerText = selectedItemff.name;
+      document.getElementById('priceSpanff').innerText = `Rp. ${selectedItemff.price}`;
+      document.getElementById('paymentMethodSpanff').innerText = selectedPaymentMethodff;
+
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+  });
+
+  closeButton.addEventListener('click', () => {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+      if (event.target == overlay) {
+          popup.style.display = 'none';
+          overlay.style.display = 'none';
+      }
+  });
+});
+
+let selectedItemff = {};
+let selectedPaymentMethodff = '';
+
+function selectitemff(name, price) {
+    selectedItemff = { name, price };
+    document.getElementById('hidden-item-name').value = name;
+    document.getElementById('hidden-price').value = price;
+}
+
+function selectCheckoutff(method) {
+    selectedPaymentMethodff = method;
+    document.getElementById('hidden-payment-method').value = method;
+}
+
+function confirmOrderff() {
+  document.getElementById('confirm').submit();
+}
+
+//notifikasi pubg
+
+document.addEventListener('DOMContentLoaded', () => {
+  const notifyButton = document.getElementById('notifyButton');
+  const popup = document.getElementById('popup');
+  const overlay = document.getElementById('overlay');
+  const closeButton = document.getElementById('closeButton');
+  
+  notifyButton.addEventListener('click', () => {
+      document.getElementById('userIdSpanPubg').innerText = document.getElementById('user-id').value;
+      document.getElementById('usernameSpanPubg').innerText = document.getElementById('user-name').value;
+      document.getElementById('itemnameSpanPubg').innerText = selectedItemPubg.name;
+      document.getElementById('priceSpanPubg').innerText = `Rp. ${selectedItemPubg.price}`;
+      document.getElementById('paymentMethodSpanPubg').innerText = selectedPaymentMethodPubg;
+
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+  });
+
+  closeButton.addEventListener('click', () => {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+      if (event.target == overlay) {
+          popup.style.display = 'none';
+          overlay.style.display = 'none';
+      }
+  });
+});
+
+let selectedItemPubg = {};
+let selectedPaymentMethodPubg = '';
+
+function selectitemPubg(name, price) {
+    selectedItemPubg = { name, price };
+    document.getElementById('hidden-item-name').value = name;
+    document.getElementById('hidden-price').value = price;
+}
+
+function selectCheckoutPubg(method) {
+    selectedPaymentMethodPubg = method;
+    document.getElementById('hidden-payment-method').value = method;
+}
+
+function confirmOrderPubg() {
   document.getElementById('confirm').submit();
 }
 
