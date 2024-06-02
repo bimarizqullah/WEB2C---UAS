@@ -101,6 +101,7 @@
                     <h3>Dana</h3>
                 </div>
             </div>
+            <!-- p -->
             <div class="order">
                 <img src="logo/no3.png" alt="nomor">
                 <h2>Pemesanan</h2>
