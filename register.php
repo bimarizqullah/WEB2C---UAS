@@ -14,28 +14,23 @@
         <img src="gambar/logo.jpg" alt="Logo"/>
       </div>
       <div class="login-right">
-        <form>
+        <form method="POST" action="process_register.php">
           <label for="username">Masukkan Username</label>
-          <input type="Username" id="username" name="username" required/>
+          <input type="text" id="username" name="username" required/>
 
-          <label for="email" >Masukkan Email</label>
-          <input type="email" id="email" name="email"/>
+          <label for="email">Masukkan Email</label>
+          <input type="email" id="email" name="email" required/>
 
-          <label for="email">Konfirmasi Email</label>
-          <input type="email" id="email" name="email" required />
+          <label for="email_confirm">Konfirmasi Email</label>
+          <input type="email" id="email_confirm" name="email_confirm" required />
 
-            
           <label for="password">Masukkan Kata Sandi</label>
-          <input type="password" id="password" name="password"/>
+          <input type="password" id="password" name="password" required/>
 
-          <label for="password">Konfirmasi Kata Sandi</label>
-          <input type="password" id="password" name="password" required />
+          <label for="password_confirm">Konfirmasi Kata Sandi</label>
+          <input type="password" id="password_confirm" name="password_confirm" required />
 
-          <button
-            type="button"
-            class="register-button"
-            onclick="halamanLogin()"
-          >
+          <button type="submit" class="register-button">
             Daftar
           </button>
 
@@ -48,7 +43,6 @@
       </div>
     </div>
     </div>
-    </body>
-    <script src="script.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>

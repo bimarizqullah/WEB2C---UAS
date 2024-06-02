@@ -621,7 +621,7 @@ a:hover {
   margin-top: 10px;
   color: green;
 }
-
+#user-name,
 #user-id,
 #zone-id {
   color: black;
@@ -681,12 +681,17 @@ a:hover {
 
 /* button notif */
 
-#closeButton {
-  width: 15%;
-  margin: 7% 34vh;
+/* General Styles */
+.classButton {
+  padding-left: 20%;
+}
+
+#closeButton, #closeButton2 {
+  margin: 20px 20px;
+  width: 30%;
   background-color: #6a00a0;
   color: white;
-  padding: 10px;
+  padding: 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -727,6 +732,10 @@ a:hover {
   background-color: #0056b3;
 }
 
+.order-btn{
+  padding: 10px;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -736,4 +745,98 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .popup {
+    width: 50%;
+    height: 50%;
+  }
+
+  #closeButton1, #closeButton2 {
+    width: 20%;
+  }
+
+  .classButton {
+    padding-left: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .popup {
+    width: 60%;
+    height: 60%;
+  }
+
+  #closeButton1, #closeButton2 {
+    width: 25%;
+  }
+
+  .classButton {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 70%;
+    height: 70%;
+  }
+
+  #closeButton1, #closeButton2 {
+    width: 30%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .classButton {
+    padding-left: 15%;
+  }
+
+  .popup p {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .popup {
+    width: 80%;
+    height: 80%;
+  }
+
+  #closeButton1, #closeButton2 {
+    width: 35%;
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .classButton {
+    padding-left: 10%;
+  }
+
+  .popup p {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .popup {
+    width: 90%;
+    height: 90%;
+  }
+
+  #closeButton1, #closeButton2 {
+    width: 40%;
+    font-size: 10px;
+    padding: 4px;
+  }
+
+  .classButton {
+    padding-left: 5%;
+  }
+
+  .popup p {
+    padding-left: 5px;
+  }
 }

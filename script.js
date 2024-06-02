@@ -1,9 +1,41 @@
 function halamanLogin() {
-  window.location.href = "login.php";
+  window.location.href = "login.php"
 }
+
+
+function login() {
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  fetch('process_login.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ email: email, password: password })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.status === 'success') {
+      alert(data.message);
+      window.location.href = "indexSession.php";
+      // Redirect ke halaman lain jika login berhasil
+    } else {
+      alert(data.message);
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+function logout() {
+  window.location.href="index.php"  
+}
+
 function halamanRegistrasi() {
-  window.location.href = "register.php";
+  // Logic untuk membuka halaman registrasi
 }
+
 
 /*logo HANZ action*/
 
@@ -75,35 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function login() {
-  const email = document.getElementById("email").value;
-
-  const password = document.getElementById("password").value;
-
-  if ((email == "admin@gmail.com") & (password == "admin")) {
-    alert("Login Berhasil!");
-    window.location.href = "indexSession.php";
-  } else {
-    alert("Login Gagal!");
-    location.reload();
-  }
-}
-function logout() {
-  alert("You have been logged out.");
-  window.location.href = "index.php";
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const username = localStorage.getItem("username") || "banuri";
-  const email = localStorage.getItem("email") || "admin@gmail.com";
-  const sessionStart =
-    localStorage.getItem("sessionStart") || "2024-05-29 10:00:00";
-
-  document.getElementById("user-name").textContent = `Welcome, ${username}`;
-  document.getElementById("session-username").textContent = username;
-  document.getElementById("session-email").textContent = email;
-  document.getElementById("session-start").textContent = sessionStart;
-});
 
 let slideIndex = 0;
 showSlides();
@@ -148,10 +151,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const popup = document.getElementById('popup');
   const overlay = document.getElementById('overlay');
   const closeButton = document.getElementById('closeButton');
-  const popupMessage = document.getElementById('popupMessage');
-  const popupDescription = document.getElementById('popupDescription');
-
+  
   notifyButton.addEventListener('click', () => {
+      document.getElementById('userIdSpan').innerText = document.getElementById('user-id').value;
+      document.getElementById('zoneIdSpan').innerText = document.getElementById('zone-id').value;
+      document.getElementById('usernameSpan').innerText = document.getElementById('user-name').value;
+      document.getElementById('itemnameSpan').innerText = selectedItem.name;
+      document.getElementById('priceSpan').innerText = `Rp. ${selectedItem.price}`;
+      document.getElementById('paymentMethodSpan').innerText = selectedPaymentMethod;
+
       popup.style.display = 'block';
       overlay.style.display = 'block';
   });
@@ -169,7 +177,46 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function notifBerhasil() {
-  alert('Transaksi Berhasil !');
+let selectedItem = {};
+let selectedPaymentMethod = '';
+
+function selectItem(name, price) {
+    selectedItem = { name, price };
+    document.getElementById('hidden-item-name').value = name;
+    document.getElementById('hidden-price').value = price;
 }
+
+function selectCheckout(method) {
+    selectedPaymentMethod = method;
+    document.getElementById('hidden-payment-method').value = method;
+}
+
+function confirmOrder() {
+  document.getElementById('confirm').submit();
+}
+
+// registrasi
+
+document.querySelector('form').addEventListener('submit', function(event) {
+  const user = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const emailConfirm = document.getElementById('email_confirm').value;
+  const password = document.getElementById('password').value;
+  const passwordConfirm = document.getElementById('password_confirm').value;
+  
+  if (email !== emailConfirm) {
+    alert('Email and confirmation email do not match!');
+    event.preventDefault();
+  }
+
+  if (password !== passwordConfirm) {
+    alert('Password and confirmation password do not match!');
+    event.preventDefault();
+  }
+});
+
+
+
+
+
 

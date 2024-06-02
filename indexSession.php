@@ -18,7 +18,7 @@
                 </button>
             </div>
             <div class="user-info">
-                <span id="user-name">Welcome, User</span>
+                <span id="user">Welcome, User</span>
                 <button type="button" class="logout-btn" onclick="logout()">Logout</button>
             </div>
         </div>
@@ -34,7 +34,10 @@
                 <img class="promo-img" src="gambar/ffSlide.jpg" alt="Promo 3">
             </div>
             <div class="slides fade">
-                <img class="promo-img" src="gambar/pubgSlide.jpg" alt="Promo 4">
+                <img class="promo-img" src="gambar/ffSlide2.png" alt="Promo 4">
+            </div>
+            <div class="slides fade">
+                <img class="promo-img" src="gambar/pubgSlide.jpg" alt="Promo 5">
             </div>
         </div>
         <br>
@@ -43,6 +46,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
         </div>
     </header>
     
