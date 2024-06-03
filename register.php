@@ -30,7 +30,7 @@
           <label for="password_confirm">Konfirmasi Kata Sandi</label>
           <input type="password" id="password_confirm" name="password_confirm" required />
 
-          <button type="submit" class="register-button">
+          <button id="register"type="submit" class="register-button" onclick="hallogin()">
             Daftar
           </button>
 

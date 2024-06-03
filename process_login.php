@@ -1,17 +1,14 @@
 <?php
 include 'config.php';
-// Memeriksa koneksi
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Mendapatkan data dari permintaan POST
 $data = json_decode(file_get_contents("php://input"));
 
 $email = $data->email;
 $password = $data->password;
 
-// Menyiapkan dan menjalankan pernyataan SQL
 $sql = "SELECT * FROM tb_akun WHERE email = ? AND password = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ss", $email, $password);

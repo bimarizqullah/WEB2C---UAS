@@ -19,7 +19,6 @@ function login() {
     if (data.status === 'success') {
       alert(data.message);
       window.location.href = "indexSession.php";
-      // Redirect ke halaman lain jika login berhasil
     } else {
       alert(data.message);
     }
@@ -29,11 +28,12 @@ function login() {
   });
 }
 function logout() {
+  alert('Anda telah Keluar');
   window.location.href="index.php"  
 }
 
 function halamanRegistrasi() {
-  // Logic untuk membuka halaman registrasi
+  window.location.href = "register.php"
 }
 
 
@@ -305,15 +305,19 @@ document.querySelector('form').addEventListener('submit', function(event) {
   const passwordConfirm = document.getElementById('password_confirm').value;
   
   if (email !== emailConfirm) {
-    alert('Email and confirmation email do not match!');
+    alert('Email tidak sesuai');
     event.preventDefault();
   }
 
   if (password !== passwordConfirm) {
-    alert('Password and confirmation password do not match!');
+    alert('Password tidak sesuai !');
     event.preventDefault();
   }
 });
+
+function hallogin() {
+  alert('Registrasi Berhasil !')
+}
 
 
 

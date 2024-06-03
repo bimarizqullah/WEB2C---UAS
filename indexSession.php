@@ -38,6 +38,9 @@
             <div class="slides fade">
                 <img class="promo-img" src="gambar/pubgSlide.jpg" alt="Promo 5">
             </div>
+            <div class="slides fade">
+                <img class="promo-img" src="gambar/pubgSlide2.jpg" alt="Promo 6">
+            </div>
         </div>
         <br>
         <div class="dot-container">
@@ -46,6 +49,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
     </header>
     
