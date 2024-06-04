@@ -72,7 +72,7 @@ input[type="password"] {
 
 /* Tombol login dan register */
 .login-button {
-  background-color: #4c006e;
+  background-color: #7100a5;
   color: white;
   border: none;
   padding: 15px;
@@ -81,14 +81,22 @@ input[type="password"] {
   cursor: pointer;
 }
 
+.login-button:hover {
+  background-color: #4c006e;
+}
+
 .register-button {
-  background-color:#a50303;
+  background-color:#e60000;
   color: white;
   border: none;
   padding: 15px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #a50303;
 }
 
 .signup-text {

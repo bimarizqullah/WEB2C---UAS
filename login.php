@@ -31,7 +31,7 @@
 
           <div class="separator">OR</div>
 
-          <button type="button" class="email-button" onclick="halamanRegistrasi()">
+          <button type="button" class="register-button" onclick="halamanRegistrasi()">
             Registrasi 
           </button>
         </form>
